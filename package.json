@@ -1,0 +1,22 @@
+{
+  "name": "developer-news",
+  "version": "1.0.0",
+  "description": "bov academy project that will for developers by developers",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OscarRobertRodriguez/developerNews.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OscarRobertRodriguez/developerNews/issues"
+  },
+  "homepage": "https://github.com/OscarRobertRodriguez/developerNews#readme",
+  "devDependencies": {
+    "webpack": "^3.10.0"
+  }
+}
