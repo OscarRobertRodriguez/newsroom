@@ -29,7 +29,7 @@
   <footer class="site-footer">
     <div class="footer-home">
       <!-- using an icon placeholder for now -->
-      <a href="index.html"><i class="fa fa-list"></i> developerNews.io</a>
+      <a href="index.html"><i class="fa fa-list"></i> DeveloperNews.io</a>
     </div>
     <div class="footer-links-row">
       <div class="footer-links">
@@ -50,13 +50,17 @@
             <a href="#" class="footer-link"><i class="fas fa-user"></i> Sign In</a>
           </li>
           <li class="footer-line-item">
-            <a href="#" class="footer-link"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="footer-link"><i class="fab fa-twitter twitter"></i></a>
           </li>
         </ul>
       </div>
       <form class="footer-subscription-link">
+        <!-- the design says First Name, but I suspect this would make more sense as 'email'? -->
         <label for="footer-name">Subscribe to DevNews Daily</label>
-        <input type="text" id="#footer-name" name="footer-name" placeholder="First Name">
+        <fieldset> 
+          <input type="text" id="#footer-name" name="footer-name" placeholder="First Name">
+          <a href="#"><i class="fas fa-arrow-right"></i></a>
+        </fieldset>
       </form>
     </div>
   </footer>

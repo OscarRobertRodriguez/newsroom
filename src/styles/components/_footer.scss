@@ -33,6 +33,11 @@
           display: inline;
           padding: 10px;
         }
+
+        li .twitter {
+          font-size: 2em;
+          margin-left: 10px;
+        }
       }
     }
 
@@ -42,11 +47,11 @@
       margin-top: 10px;
       width: 200px;
 
-      input {
-        width: 100%;
-        margin-top: 5px;
+      fieldset {
+        border: 0;
+        margin: 10px 0 0 0;
+        padding: 0;
       }
     }
   }
-
 }
