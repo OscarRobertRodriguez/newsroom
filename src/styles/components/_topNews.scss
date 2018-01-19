@@ -1,6 +1,8 @@
 .top-news {
+  position: relative;
   background: none;
   font-family: $fontType;
+
 }
 
 .top-news__article-wrapper {
@@ -8,6 +10,14 @@
   margin: 5em auto 1em auto;
   justify-content: center;
   width: 80%;
+}
+
+// title of site 
+.top-news__title {
+  font-size: 2.7em;
+  margin-left: 1.5em;
+  margin-top: 1em;
+  text-transform: capitalize;
 }
 
 .top-news__article {
@@ -34,4 +44,32 @@
 
 .top-news--top-highlight {
   border-top: 2px solid #FDB8BC;
+}
+
+
+.border-corner--triple {
+  top: 20px;
+  left: 20px;
+  position: absolute; 
+  width: 90px;
+  height: 40px; 
+  border-left: 1px solid black;
+  border-top: 1px solid black;
+  &:after, &:before {
+    content:''; 
+    width: 90px;
+    height: 40px; 
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+  }
+  &:after {
+    position: absolute;
+    bottom: -10px;
+    left: 10px;
+  }
+  &:before {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+  }
 }
