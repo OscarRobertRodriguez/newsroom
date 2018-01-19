@@ -1,12 +1,12 @@
 $red: rgb(209, 86, 72);
-$white: white;
+$white: rgb(255, 255, 255);
 
 //green
-$green: green;
+$green: rgb(0, 128, 0);
 $lightGreen: lighten($green, 18);
 
 //orange
-$orange: orange;
+$orange: rgb(255, 165, 0);
 $lightOrange: lighten($orange, 0);
 
 //blue
@@ -14,7 +14,7 @@ $blue: rgb(56, 155, 236);
 $lightBlue: darken($blue, 0);
 
 // blacks
-$black: #000;
+$black: rgb(0, 0, 0);
 $mediumBlack: lighten($black, 20);
 
 // grays
