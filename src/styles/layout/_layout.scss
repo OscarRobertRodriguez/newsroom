@@ -1,13 +1,11 @@
-
-
-html , body {
+html, body {
   width: 100%;
   height: 100%;
 }
 
 body {
-display: flex;
- justify-content: center;
+  display: flex;
+  justify-content: center;
   margin: 0; 
   padding: 0;
 }
@@ -20,7 +18,6 @@ display: flex;
   height: 100vh;
 }
 
-
 .top-news, 
 .blog,
 .developer-videos {
@@ -28,13 +25,14 @@ display: flex;
   width: 100%;
 }
 
-
 .top-news {
   background: orange;
 }
+
 .blog {
   background: blue;
 }
+
 .developer-videos {
   background: red;
 }
