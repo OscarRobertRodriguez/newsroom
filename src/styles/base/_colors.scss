@@ -1,0 +1,11 @@
+$red: rgb(209, 86, 72);
+$white: white;
+
+// blacks
+$black: #000;
+$mediumBlack: lighten($black, 20);
+
+// grays
+$gray: lighten($black, 30);
+$lightGray: lighten($black,75);
+$medGray: lighten($black, 45);
