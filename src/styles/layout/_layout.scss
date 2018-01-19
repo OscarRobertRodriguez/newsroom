@@ -1,0 +1,42 @@
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  margin: 0; 
+  padding: 0;
+}
+
+.page-wrapper {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  max-width: 1450px;
+  height: 100vh;
+}
+
+.top-news, 
+.blog,
+.developer-videos {
+  flex: 1 0 auto;
+  width: 100%;
+}
+
+.top-news {
+  background: orange;
+}
+
+.blog {
+  background: blue;
+}
+
+.developer-videos {
+  background: red;
+}
+
+.site-footer {
+  background: green;
+}
