@@ -1,0 +1,37 @@
+.top-news {
+  background: none;
+  font-family: $fontType;
+}
+
+.top-news__article-wrapper {
+  display: flex;
+  margin: 5em auto 1em auto;
+  justify-content: center;
+  width: 80%;
+}
+
+.top-news__article {
+  width: 300px;
+  color: #464648;
+  padding: 0 2rem;
+}
+
+.top-news__article-title {
+  font-size: 2rem;
+  font-weight: 150;
+  text-align: left;
+  padding-bottom: 10px;
+  text-transform: capitalize;
+  margin: 0;
+  width: 80%;
+}
+
+.top-news__article-summary {
+  font-weight: 600;
+  font-size: 1.2rem;
+  padding-top: 1em;
+}
+
+.top-news--top-highlight {
+  border-top: 2px solid #FDB8BC;
+}
