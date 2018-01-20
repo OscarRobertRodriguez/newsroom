@@ -1,5 +1,6 @@
 @import 'base/colors';
 @import 'base/typography';
+@import 'base/_helperClasses';
 
 // layout
 @import 'layout/layout';
@@ -7,3 +8,5 @@
 @import 'layout/submitArticle';
 @import 'layout/topNews';
 @import 'layout/footer';
+
+@import 'components/settingsModal';
