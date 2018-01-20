@@ -89,9 +89,10 @@
 
 .tech-selection {
   visibility: hidden;
+  position: absolute;
 }
 
-.tech-selection:checked + .checkbox {
+.tech-selection:checked + label .checkbox {
   background-color: $red;
 }
 
@@ -108,7 +109,11 @@
   height: 15px;
 }
 
-.checkbox + label:hover,
+.checkbox-container label {
+  margin-left: 20px;
+}
+
+.checkbox-container label:hover,
 .settings-modal-footer-item:last-child,
 .settings-modal-footer-item:first-child {
   cursor: pointer;
