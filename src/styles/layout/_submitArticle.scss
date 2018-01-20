@@ -1,0 +1,93 @@
+.submit-article {
+	box-sizing: border-box;
+	width: 420px;
+	border-radius: 2.5px;
+	border: 2px solid $red;
+	font-weight: 200;
+	position: relative;
+	* {
+		box-sizing: border-box;
+		&:focus {
+			outline: 0;
+			box-shadow: 0 0 5px 1px rgba(100,100,100,.10);
+			transition: box-shadow .3s ease-in-out;
+		}
+	}
+	&__top-pointer {
+		position: absolute;
+		transform: rotate(270deg);
+		color: $red;
+		right: 70px;
+		top: -22px;
+		font-size: 150%;
+	}
+	&__header {
+		background-color: $red;
+		color: $white;
+		margin: 0;
+		text-align: center;
+		padding: 14px 0;
+	}
+	&__inputs {
+		padding: 11px 16px;
+		margin: auto 15px;
+		font-size: 90%;
+	}
+	&__input {
+		display: block;
+		width: 100%;
+		border: 1.25px solid $red;
+		margin: 19px 0;
+		padding: 5px 8px;
+		border-radius: 2px;
+		&::placeholder {
+			color: $medGray;
+			font-size: 75%;
+			letter-spacing: .9px;
+		};
+		&-select,
+		&-textarea {
+			&-label {
+				position: relative;
+				
+				font-size: 80%;
+			}
+			margin-top: 6px;
+			background: transparent;
+		}
+		&-select {
+			height: 30px;
+		}
+		&-textarea {
+			height: 110px;
+		}
+		&-thirty-five {
+			width: 35%;
+		}
+	}
+	&__submit {
+		margin: 30px auto;
+		display: block;
+		background: transparent;
+		border: 2px solid $red;
+		border-radius: 4px;
+		background-color: $red;
+		color: $white;
+		padding: 13px 0;
+		width: 200px;
+		&:hover {
+			cursor: pointer;
+			outline: 0;
+			box-shadow: 0 0 5px 1px rgba(0,0,0,.2);
+		}
+		&:focus {
+			outline: 0;
+		}
+		.far {
+			padding-right: 7px;
+			position: relative;
+			top: 1px;
+			font-size: 18px;
+		}
+	}
+}
