@@ -1,4 +1,8 @@
 @import 'base/colors';
 @import 'base/typography';
 @import 'layout/layout';
+
+// components
 @import 'layout/header';
+@import 'components/topNews'; 
+@import 'components/footer';
