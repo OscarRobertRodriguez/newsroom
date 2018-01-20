@@ -13,8 +13,8 @@ function toggleModals(collection) {
 }
 
 
-var settingsIcon = document.querySelector('.settings-icon');
-var settingsModal = document.querySelector('.modal-settings');
+const settingsIcon = document.querySelector('.settings-icon');
+const settingsModal = document.querySelector('.modal-settings');
 
 settingsIcon.addEventListener('click', toggleSettingsModal);
 
