@@ -1,7 +1,6 @@
 .top-news {
   position: relative;
   background: none;
-  font-family: $fontType;
   padding-bottom: 1em;
 }
 
@@ -21,25 +20,26 @@
 }
 
 .top-news__article {
-  width: 300px;
+  width: 270px;
   color: #464648;
   padding: 0 2rem;
 }
 
 .top-news__article-title {
   font-size: 2rem;
-  font-weight: 150;
+  font-weight: 100;
   text-align: left;
   padding-bottom: 10px;
   text-transform: capitalize;
   margin: 0;
-  width: 80%;
+  padding-right: 1.3em;
 }
 
 .top-news__article-summary {
   font-weight: 600;
-  font-size: 1.2rem;
+  font-size: 1rem;
   padding-top: 1em;
+  line-height: 1.8;
 }
 
 .top-news--top-highlight {
@@ -54,20 +54,20 @@
   height: 40px;
   border-left: 1px solid black;
   border-top: 1px solid black;
-  &:after,
-  &:before {
+  &::after,
+  &::before {
     content: '';
     width: 90px;
     height: 40px;
     border-left: 1px solid black;
     border-top: 1px solid black;
   }
-  &:after {
+  &::after {
     position: absolute;
     bottom: -10px;
     left: 10px;
   }
-  &:before {
+  &::before {
     position: absolute;
     top: -10px;
     left: -10px;
