@@ -1,0 +1,57 @@
+.site-footer {
+  background: #3A3A3C;
+  color: $white;
+  min-height: 300px;
+  width: 100%;
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .footer-home {
+    margin: 100px 0 0 100px;
+
+    a {
+      font-size: 50px;
+    }
+  }
+
+  .footer-links-row {
+    display: flex;
+    margin-left: 100px;
+
+    .footer-links{
+      margin-top: 30px;
+
+      ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+
+        li {
+          display: inline;
+          padding: 10px;
+        }
+
+        li .twitter {
+          font-size: 2em;
+          margin-left: 10px;
+        }
+      }
+    }
+
+    .footer-subscription-link {
+      display: block;
+      margin-left:100px;
+      margin-top: 10px;
+      width: 200px;
+
+      fieldset {
+        border: 0;
+        margin: 10px 0 0 0;
+        padding: 0;
+      }
+    }
+  }
+}
