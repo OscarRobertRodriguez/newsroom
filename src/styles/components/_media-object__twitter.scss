@@ -1,0 +1,77 @@
+.media-object__twitter{
+  display: inline-grid;
+  grid-template-columns: 1fr 3fr;
+  max-width: 45%;
+  margin: 20px 0;
+  border: 1px solid $gray;
+
+  .tw-user{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-content: center;
+    
+    &__img{
+      max-width: 75px;
+    }
+
+    &__details{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 10px;
+    }
+
+    &__name{
+      font-weight: bold;
+      padding-bottom: 5px;
+    }
+    
+    &-handle{
+      color: $lightGray;
+    }
+  }
+
+  .tw-follow{
+    padding: 20px;
+    justify-self: end;
+    align-self: center;
+    a{
+      text-decoration: none;
+    }
+    
+    &__btn{
+      border: 1px solid $red;
+      color: $red;
+      padding: 5px 10px;
+      font-weight: bold;
+    }
+  }
+
+  .tw-message{
+    padding: 0 20px;
+    grid-column: span 2;
+  }
+
+  .tw-posted-on{
+    color: $lightGray;
+    padding: 15px 20px 10px;
+    font-weight: bold;
+    font-size: 0.85rem;
+    grid-column: span 2;
+  }
+
+  hr{
+    background: $red;
+    width: 100%;
+    border: 0;
+    height: 2px;
+    padding: 0;
+    grid-column: span 2;
+  }
+
+
+
+
+
+}
