@@ -1,4 +1,4 @@
-.modal {
+.modal-settings {
   color: $white;
   background-color: $white;
   position: absolute;
@@ -10,6 +10,8 @@
   height: 670px;
   width: 1000px;
   z-index: 100;
+  -webkit-animation: .2s settingsModalTrans cubic-bezier(0.94, 0.25, 1, 1);
+  animation: .2s settingsModalTrans cubic-bezier(0.94, 0.25, 1, 1);
 }
 
 .modal-content {
@@ -17,16 +19,17 @@
   margin: auto;
   height: 90%;
   width: 90%;
-}
-
-.settings-tooltip {
-  background-color: $red;
-  height: 40px;
-  position: absolute;
-  top: -13px;
-  right: 6rem;
-  width: 20px;
-  transform: rotate(45deg);
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 6rem;
+    border: 12px solid transparent;
+    box-sizing: border-box;
+    border-bottom: 16px solid $red;
+    transform: translateY(-100%);
+  }
 }
 
 .settings-header {
@@ -162,4 +165,9 @@
 
 .settings-modal-footer-item:last-child {
   margin-left: auto;
+}
+
+@keyframes settingsModalTrans {
+  0%   {opacity: 0;}
+  100% {opacity: 1;}
 }
