@@ -218,6 +218,30 @@
         </div>
       </section>
     </section>
+    
+    <!-- submit article modal -->
+    <section class="submit-article modal hidden">
+      <h2 class="submit-article__header">Submit an Article</h2>
+      <div class="submit-article__inputs">
+        <input type="text" name="title" class="submit-article__input" placeholder="Title">
+        <input type="text" name="url" class="submit-article__input" placeholder="URL">
+        <label class="submit-article__input-textarea-label">Article Summary (190 characters max)</label>
+        <textarea name="summary" class="submit-article__input submit-article__input-textarea" placeholder="The main point of the article" maxlength="190"></textarea>
+        <input type="text" name="date" class="submit-article__input submit-article__input-thirty-five" placeholder="Article Date">
+        <label class="submit-article__input-select-label">Select a Category</label>
+        <select class="submit-article__input submit-article__input submit-article__input-select" name="category">
+          <option class="submit-article__input-option" selected disabled></option>
+          <option class="submit-article__input-option" value="option1">Option 1</option>
+          <option class="submit-article__input-option" value="option2">Option 2</option>
+          <option class="submit-article__input-option" value="option3">Option 3</option>
+          <option class="submit-article__input-option" value="option4">Option 4</option>
+          <option class="submit-article__input-option" value="option5">Option 5</option>
+          <option class="submit-article__input-option" value="option6">Option 6</option>
+        </select>
+        <span class="submit-article__input-select-arrow fas fa-chevron-down"></span>
+        <button class="submit-article__submit"><span class="submit-article__submit-icon far fa-edit"></span>Submit Article</button>
+      </div>
+    </section>
 
     <main class='blog'>
       <h2>im the main section</h2>
