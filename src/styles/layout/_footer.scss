@@ -1,7 +1,7 @@
 .site-footer {
   background: #3A3A3C;
   color: $white;
-  min-height: 300px;
+  min-height: 400px;
   width: 100%;
 
   a {
@@ -10,7 +10,7 @@
   }
 
   .footer-home {
-    margin: 100px 0 0 100px;
+    margin: 100px 0 0 150px;
 
     a {
       font-size: 50px;
@@ -19,15 +19,15 @@
 
   .footer-links-row {
     display: flex;
-    margin-left: 100px;
+    margin-left: 150px;
 
     .footer-links{
       margin-top: 30px;
 
       ul {
-        padding: 0;
-        margin: 0;
         list-style: none;
+        margin: 0;
+        padding: 0;
 
         li {
           display: inline;
@@ -36,7 +36,8 @@
 
         li .twitter {
           font-size: 2em;
-          margin-left: 10px;
+          margin-left: 20px;
+          margin-top: 5px;
         }
       }
     }
@@ -45,12 +46,42 @@
       display: block;
       margin-left:100px;
       margin-top: 10px;
-      width: 200px;
 
       fieldset {
+        align-content: center;
         border: 0;
+        display: flex;
         margin: 10px 0 0 0;
         padding: 0;
+
+        input {
+          background-color: $white;
+          border: none;
+          font-size: 0.8em;
+          font-weight: 600;
+          height: 45px;
+          padding: 0 0 0 10px;
+          width: 200px;
+        }
+
+        .submit-subscription-logo , .submit-subscription-button {
+          height: 45px;
+          line-height: 45px;  
+          text-align: center;
+          i {
+            display: inline-block;
+            vertical-align: middle;
+          }        
+        }
+
+        .submit-subscription-logo {
+          width: 30px;
+        }     
+
+        .submit-subscription-button {
+          background: #909091;
+          width: 50px;
+        }      
       }
     }
   }

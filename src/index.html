@@ -87,58 +87,63 @@
     </section>
 
     <footer class="site-footer">
-      <div class="footer-home">
-        <!-- using an icon placeholder for now -->
-        <a href="index.html">
-          <span class="fa fa-list"></span> DeveloperNews.io
-        </a>
-      </div>
-      <div class="footer-links-row">
-        <div class="footer-links">
-          <ul>
-            <li class="footer-line-item">
-              <a href="#" class="footer-link">
-                <span class="fa fa-info-circle"></span> FAQ
-              </a>
-            </li>
-            <li class="footer-line-item">
-              <a href="#" class="footer-link">
-                <span class="fab fa-youtube"></span> Videos
-              </a>
-            </li>
-            <li class="footer-line-item">
-              <a href="#" class="footer-link">
-                <span class="fas fa-align-justify"></span> Archives
-              </a>
-            </li>
-            <li class="footer-line-item">
-              <a href="#" class="footer-link">
-                <span class="fa fa-envelope"></span> Contact
-              </a>
-            </li>
-            <li class="footer-line-item">
-              <a href="#" class="footer-link">
-                <span class="fas fa-user"></span> Sign In
-              </a>
-            </li>
-            <li class="footer-line-item">
-              <a href="#" class="footer-link">
-                <span class="fab fa-twitter twitter"></span>
-              </a>
-            </li>
-          </ul>
+      <div class="footer-container">
+        <div class="footer-home">
+          <!-- using an icon placeholder for now -->
+          <a href="index.html">
+            <span class="fa fa-list"></span> DeveloperNews.io
+          </a>
         </div>
-        <form class="footer-subscription-link">
-          <!-- the design says First Name, but I suspect this would make more sense as 'email'? -->
-          <label for="footer-name">Subscribe to DevNews Daily</label>
-          <fieldset>
-            <input type="text" id="#footer-name" name="footer-name" placeholder="First Name">
-            <a href="#">
-              <span class="fas fa-arrow-right"></span>
-            </a>
-          </fieldset>
-        </form>
-      </div>
+        <div class="footer-links-row">
+          <div class="footer-links">
+            <ul>
+              <li class="footer-line-item">
+                <a href="#" class="footer-link">
+                  <span class="fa fa-info-circle"></span> FAQ
+                </a>
+              </li>
+              <li class="footer-line-item">
+                <a href="#" class="footer-link">
+                  <span class="fab fa-youtube"></span> Videos
+                </a>
+              </li>
+              <li class="footer-line-item">
+                <a href="#" class="footer-link">
+                  <span class="fas fa-align-justify"></span> Archives
+                </a>
+              </li>
+              <li class="footer-line-item">
+                <a href="#" class="footer-link">
+                  <span class="fa fa-envelope"></span> Contact
+                </a>
+              </li>
+              <li class="footer-line-item">
+                <a href="#" class="footer-link">
+                  <span class="fas fa-user"></span> Sign In
+                </a>
+              </li>
+              <li class="footer-line-item">
+                <a href="#" class="footer-link">
+                  <span class="fab fa-twitter twitter"></span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <form class="footer-subscription-link">
+            <!-- the design says First Name, but I suspect this would make more sense as 'email'? -->
+            <label for="footer-name">Subscribe to DevNews Daily</label>
+            <fieldset>
+              <div class="submit-subscription-logo">
+                <img src="assets/images/footerSubscriptionLogo.png" alt="logo"/>
+              </div> 
+              <input type="text" id="#footer-name" name="footer-name" placeholder="First Name">
+              <a href="#" class="submit-subscription-button">
+                <i class="fas fa-arrow-right"></i>
+              </a>
+            </fieldset>
+          </form>
+        </div>
+      </div>      
     </footer>
   </div>
 </body>
