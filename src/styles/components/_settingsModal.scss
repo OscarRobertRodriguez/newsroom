@@ -1,0 +1,165 @@
+.modal {
+  color: $white;
+  background-color: $white;
+  position: absolute;
+  display: flex;
+  left: 0;
+  right: 0;
+  top: 30px;
+  margin: auto;
+  height: 670px;
+  width: 1000px;
+  z-index: 100;
+}
+
+.modal-content {
+  position: relative;
+  margin: auto;
+  height: 90%;
+  width: 90%;
+}
+
+.settings-tooltip {
+  background-color: $red;
+  height: 40px;
+  position: absolute;
+  top: -13px;
+  right: 6rem;
+  width: 20px;
+  transform: rotate(45deg);
+  position: absolute;
+}
+
+.settings-header {
+  background-color: $red;
+  font-weight: 400;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+.tech-container {
+  color: $red;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tech-box {
+  border: 1px solid $red;
+  height: 200px;
+  // width:448px;
+  width: 49.77%;
+}
+
+// make the 3rd and 4th tech boxes have slightly more height 
+.tech-box:nth-child(3),
+.tech-box:last-child {
+  height: 220px;
+}
+
+.tech-both-sides {
+  color: $mediumBlack;
+  display: flex;
+}
+
+.tech-left-side {
+  // border:1px solid $red;
+  color: $mediumBlack;
+  margin: 10px;
+}
+
+.tech-left-side > * {
+  padding: 12px;
+}
+
+.tech-right-side {
+  margin: 10px;
+}
+
+.tech-right-side > * {
+  padding: 12px;
+}
+
+.tech-title {
+  font-weight: 600;
+  margin-top: 15px;
+  margin-bottom: 0;
+  margin-left: 22px;
+  margin-right: 15px;
+}
+
+.tech-selection {
+  visibility: hidden;
+}
+
+.tech-selection:checked + .checkbox {
+  background-color: $red;
+}
+
+.checkbox-container {
+  position: relative;
+}
+
+.checkbox {
+  border: 1px solid $red;
+  border-radius: 3px;
+  position: absolute;
+  left: 7px;
+  width: 15px;
+  height: 15px;
+}
+
+.checkbox + label:hover,
+.settings-modal-footer-item:last-child,
+.settings-modal-footer-item:first-child {
+  cursor: pointer;
+}
+
+.hot-news-container {
+  border: 1px solid $red;
+}
+
+.submit-tech {
+  border-radius: 5px;
+  background-color: $white;
+  color: $red;
+  font-size: 120%;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 40px;
+  width: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.submit-tech-item {
+  padding: 3px;
+}
+
+.submit-tech-item:last-child {
+  font-weight: 600;
+  font-size: 140%;
+}
+
+.settings-modal-footer {
+  background-color: $red;
+  color: $white;
+  display: flex;
+  padding-left: 10px;
+  padding-right: 10px;
+  align-items: center;
+}
+
+.settings-modal-footer-item:first-child {
+  font-size: 140%;
+}
+
+.settings-modal-footer-item:last-child {
+  margin-left: auto;
+}
+
+
+
+
