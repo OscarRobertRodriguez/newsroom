@@ -228,57 +228,93 @@
     </section>
 
     <footer class="site-footer">
-      <div class="footer-home">
-        <!-- using an icon placeholder for now -->
-        <a href="index.html">
-          <span class="fa fa-list"></span> DeveloperNews.io
-        </a>
-      </div>
-      <div class="footer-links-row">
-        <div class="footer-links">
-          <ul>
-            <li class="footer-line-item">
-              <a href="#" class="footer-link">
-                <span class="fa fa-info-circle"></span> FAQ
-              </a>
-            </li>
-            <li class="footer-line-item">
-              <a href="#" class="footer-link">
-                <span class="fab fa-youtube"></span> Videos
-              </a>
-            </li>
-            <li class="footer-line-item">
-              <a href="#" class="footer-link">
-                <span class="fas fa-align-justify"></span> Archives
-              </a>
-            </li>
-            <li class="footer-line-item">
-              <a href="#" class="footer-link">
-                <span class="fa fa-envelope"></span> Contact
-              </a>
-            </li>
-            <li class="footer-line-item">
-              <a href="#" class="footer-link">
-                <span class="fas fa-user"></span> Sign In
-              </a>
-            </li>
-            <li class="footer-line-item">
-              <a href="#" class="footer-link">
-                <span class="fab fa-twitter twitter"></span>
-              </a>
-            </li>
-          </ul>
+      <div class="footer-container">        
+        <div class="footer-home">
+          <a href="index.html">
+            <span class="fa fa-list"></span> DeveloperNews.io
+          </a>
         </div>
-        <form class="footer-subscription-link">
-          <!-- the design says First Name, but I suspect this would make more sense as 'email'? -->
-          <label for="footer-name">Subscribe to DevNews Daily</label>
-          <fieldset>
-            <input type="text" id="footer-name" name="footer-name" placeholder="First Name">
-            <a href="#">
-              <span class="fas fa-arrow-right"></span>
-            </a>
-          </fieldset>
-        </form>
+        <div class="footer-links-row">
+          <div class="footer-links">
+            <ul>
+              <li class="footer-line-item">
+                <a href="#" class="footer-link">
+                  <span class="fa fa-info-circle"></span> FAQ
+                </a>
+              </li>
+              <li class="footer-line-item">
+                <a href="#" class="footer-link">
+                  <span class="fab fa-youtube"></span> Videos
+                </a>
+              </li>
+              <li class="footer-line-item">
+                <a href="#" class="footer-link">
+                  <span class="fas fa-align-justify"></span> Archives
+                </a>
+              </li>
+              <li class="footer-line-item">
+                <a href="#" class="footer-link">
+                  <span class="fa fa-envelope"></span> Contact
+                </a>
+              </li>
+              <li class="footer-line-item">
+                <a href="#" class="footer-link">
+                  <span class="fas fa-user"></span> Sign In
+                </a>
+              </li>
+              <li class="footer-line-item">
+                <a href="#" class="footer-link">
+                  <span class="fab fa-twitter twitter"></span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-subscribe-form-container">
+            <h4>Subscribe to DevNews Daily</h4>  
+            <form class="subscribe-form" id="subscription-form" novalidate="">
+              <!--First Name -->
+              <div class="subscribe-form__input-wrap subscribe-form-is-active left-one-half">
+                <div class="subscribe-form__input-inner subscribe-form-anim-bgchange">
+                  <input name="firstName" placeholder="First Name" class="subscribe-form__input" minlength="2" maxlength="20" required="" type="text">
+                  <button type="button" class="subscribe-form__btn--next">
+                    <i class="fas fa-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+              <!-- Last Name -->
+              <div class="subscribe-form__input-wrap subscribe-form-anim-fadeout-back left-one">
+                <div class="subscribe-form__input-inner">
+                  <input name="lastName" placeholder="Last Name" class="subscribe-form__input" minlength="2" maxlength="20" required="" type="text">
+                  <button type="button" class="subscribe-form__btn--next">
+                    <i class="fas fa-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+              <span class="subscribe-form__btn--prev left-custom hidden transition-zero"></span>
+              <!-- email -->
+              <div class="subscribe-form__input-wrap subscribe-form-anim-fadeout-back left-half">
+                <div class="subscribe-form__input-inner">
+                  <input name="subscriberEmail" placeholder="Email" class="subscribe-form__input" required="" type="email">
+                  <button type="button" class="subscribe-form__btn--next">
+                    <i class="fas fa-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+              <span class="subscribe-form__btn--prev left-custom hidden transition-zero"></span>
+              <!-- Subscribe button -->
+              <div class="subscribe-form__input-wrap subscribe-form__submit subscribe-anim-fadeout-back left-zero">
+                <div class="subscribe-form__input-inner">
+                  <button type="button" class="subscribe-form__btn--back">
+                    <i class="fas fa-arrow-right">arrow_back</i>
+                  </button>
+                  <input name="submit-mailchimp" value="Subscribe" class="subscribe-form__submit-btn" data-ga-category="Subscribe" data-ga-action="subscribe" data-ga-label="Subscribe for Updates" type="submit">
+                </div>
+              </div>
+              <span class="subscribe-form__btn--prev"></span>
+              <div class="subscribe-form__status-message" id="mailchimp-generic-subscribe-status"></div>
+            </form>
+          </div>
+        </div>  
       </div>
     </footer>
   </div>
