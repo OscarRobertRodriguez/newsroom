@@ -60,6 +60,8 @@
 		}
 		&-textarea {
 			height: 110px;
+      resize: none;
+      overflow: auto;
 		}
 		&-thirty-five {
 			width: 35%;
@@ -68,7 +70,6 @@
 	&__submit {
 		margin: 30px auto;
 		display: block;
-		background: transparent;
 		border: 2px solid $red;
 		border-radius: 4px;
 		background-color: $red;
