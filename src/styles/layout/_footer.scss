@@ -25,8 +25,8 @@
     margin-left: 150px;
 
     .footer-links{
-      margin-top: 30px;
       font-size: 1.2em;
+      margin-top: 30px;
 
       ul {
         list-style: none;
@@ -47,12 +47,12 @@
     }
 
     /* Subscription Form */
-    .footer-subscribe-form {
+    .footer-subscribe-form-container {
+      align-items: center;
       display: flex;
       flex-direction: column;
-      align-items: center;
-      padding: 0 3rem;
       margin-bottom: 6rem;
+      padding: 0 3rem;
 
       h4 {
         align-self: left;
@@ -62,36 +62,57 @@
         padding-bottom: 5px;
       }
       
-      .evo_c-mini-form {
+      .subscribe-form {
         align-items: center;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-align: center;
-        -ms-flex-pack: start;
-        justify-content: flex-start;
-        margin: 0 auto;
-        width: 320px;
         box-sizing: border-box;
+        display: flex;
         font-size: 16px;
         height: 3.3em;
+        justify-content: flex-start;
+        margin: 0 auto;
         position: relative;
+        width: 320px;
+        
+        .left-zero {
+          left: 0em;
+        } 
 
-        * {
-          box-sizing: inherit;
-          font-size: inherit;
+        .left-half {
+          left: 0.5em;
+        } 
+
+        .left-one {
+          left: 1em;
+        } 
+
+        .left-one-half {
+          left: 1.5em;
+        } 
+
+        .left-custom {
+          left: calc(20.5em - 5px);
+        }
+
+        .hidden {
+          visibility: hidden;
+        }
+
+        .transistion-zero {
+          transition-delay: 0s, 0s;
         }
 
         // Input 1 of 4
-        .evo_c-mini-form__input-wrap.js-mini-form-is-active {
+        .subscribe-form__input-wrap.subscribe-form-is-active {
           min-width: 19.5em;
         }  
 
-        .evo_c-mini-form__input-wrap:first-of-type {
+        .subscribe-form__input-wrap:first-of-type {
           border: 0;
           width: 19em;
         }
 
-        .evo_c-mini-form__input-wrap {
+        .subscribe-form__input-wrap {
+          animation-fill-mode: forwards;
           animation-duration: .65s;
           background-color: #172132;
           border-right: 5px solid #5e7386;
@@ -104,51 +125,41 @@
           top: 0;
           transition: border-right-color .2s .45s;
           width: 0;
-          animation-fill-mode: forwards;
         }
 
-        .evo_c-mini-form__input-inner {
+        .subscribe-form__input-inner {
           align-items: center;
           display: -ms-flexbox;
           display: flex;
-          -ms-flex-align: center;
-          -ms-flex-pack: start;
           height: 100%;
           justify-content: flex-start;
           left: .5em;
           opacity: 1;
           overflow: hidden;
-          //position: absolute;
           width: 18em;
         
-
           // input 
-          evo_c-mini-form__input {
+          .subscribe-form__input {
             background-color: #5B677B;
+            border: none;
             border-radius: 0;
             color: #fff;
-          }
-
-          .evo_c-mini-form__input {
             height: 100%;
+            outline: 0;
             margin: 0;
             padding: 1px .9em;
             width: 14.7em;
           }
-       
-          input {
-            border: none;
-            outline: 0;
-          }
 
           // button
-          .evo_c-mini-form__btn--next {
+          .subscribe-form__btn--next {
             animation-duration: .65s;
-            background-color: #909091;
-            color: white;
             animation-fill-mode: forwards;
-            border-radius: 0;
+            background-color: #909091;
+            border: none;
+            color: white;
             cursor: pointer;
+            font-size: 1em;
             height: 100%;
             line-height: 1;
             margin-bottom: 0;
@@ -157,44 +168,45 @@
             padding: 1px 6px;
             transition: background-color .2s;
             width: 3.3em;
-            font-size: 1em;
           }
         }
 
-        input[type=email], input[type=text], input[type=tel], input[type=url], input[type=password], input[type=number], input[type=search], select, textareainput[type=text], input[type=tel], input[type=url], input[type=password], input[type=number], input[type=search], select, textarea {
+        input {
           background-color: #fff;
-          border: 1px solid #D1D1D1;
           box-shadow: none;
           box-sizing: border-box;
         }
 
         button {
+          background-color: transparent;
+          cursor: pointer;
+          box-sizing: border-box;
           display: inline-block;
           height: 38px;
           padding: 0 30px;
           color: #555;
-          text-align: center;
           font-size: 11px;
           font-weight: 600;
           line-height: 38px;
           letter-spacing: .1rem;
-          text-transform: uppercase;
+          text-align: center;
           text-decoration: none;
+          text-transform: uppercase;
           white-space: nowrap;
-          background-color: transparent;
-          border-radius: 4px;
-          border: 1px solid #bbb;
-          cursor: pointer;
-          box-sizing: border-box;
+        }
+
+        button:focus {
+          outline:0;
         }
 
         // input 2 of 4
-        .evo_c-mini-form__input-wrap.js-mini-form-is-active~.evo_c-mini-form__input-wrap {
+        .subscribe-form__input-wrap.subscribe-form-is-active~.subscribe-form__input-wrap {
           border-right-color: #9C9C9D;
           transition: border-right-color .2s;
         }
 
-        .evo_c-mini-form__input-wrap {
+        .subscribe-form__input-wrap {
+          animation-fill-mode: forwards;
           animation-duration: .65s;
           background-color: #3A3A3C;
           border-right: 5px solid #5e7386;
@@ -207,11 +219,10 @@
           top: 0;
           transition: border-right-color .2s .45s;
           width: 0;
-          animation-fill-mode: forwards;
         }
 
         // input 3 & 4 of 4
-        .evo_c-mini-form__input-wrap.js-mini-form-is-active~.evo_c-mini-form__input-wrap~.evo_c-mini-form__input-wrap {
+        .subscribe-form__input-wrap.subscribe-form-is-active~.subscribe-form__input-wrap~.subscribe-form__input-wrap {
           border-right-color: #7A7A7C;
           transition: border-right-color .2s;
         }

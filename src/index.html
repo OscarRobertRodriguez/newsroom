@@ -228,9 +228,8 @@
     </section>
 
     <footer class="site-footer">
-      <div class="footer-container"> <!-- added a container div in case footer has to go full width, but display kept central -->          
+      <div class="footer-container">        
         <div class="footer-home">
-          <!-- using an icon placeholder for now -->
           <a href="index.html">
             <span class="fa fa-list"></span> DeveloperNews.io
           </a>
@@ -270,48 +269,49 @@
               </li>
             </ul>
           </div>
-          <!-- Subscription Form - Copied from BOV Academy footer-->
-          <div class="footer-subscribe-form">
+          <div class="footer-subscribe-form-container">
             <h4>Subscribe to DevNews Daily</h4>  
-            <form class="evo_c-mini-form js-md-subscribe" id="subscription-form" novalidate="">
-              <div class="evo_c-mini-form__input-wrap js-mini-form-is-active" style="left: 1.5em;">
-                <div class="evo_c-mini-form__input-inner js-mini-form-anim-bgchange">
-                  <input name="firstName" placeholder="First Name" class="evo_c-mini-form__input" minlength="2" maxlength="20" required="" type="text">
-                  <button type="button" class="evo_c-mini-form__btn--next">
+            <form class="subscribe-form" id="subscription-form" novalidate="">
+              <!--First Name -->
+              <div class="subscribe-form__input-wrap subscribe-form-is-active left-one-half">
+                <div class="subscribe-form__input-inner subscribe-form-anim-bgchange">
+                  <input name="firstName" placeholder="First Name" class="subscribe-form__input" minlength="2" maxlength="20" required="" type="text">
+                  <button type="button" class="subscribe-form__btn--next">
                     <i class="fas fa-arrow-right"></i>
                   </button>
                 </div>
               </div>
-
-              <div class="evo_c-mini-form__input-wrap js-mini-form-anim-fadeout-back" style="left: 1em;">
-                <div class="evo_c-mini-form__input-inner">
-                  <input name="lastName" placeholder="Last Name" class="evo_c-mini-form__input" minlength="2" maxlength="20" required="" type="text">
-                  <button type="button" class="evo_c-mini-form__btn--next">
-                    <i class="fas fa-arrow-right"></i></button>
+              <!-- Last Name -->
+              <div class="subscribe-form__input-wrap subscribe-form-anim-fadeout-back left-one">
+                <div class="subscribe-form__input-inner">
+                  <input name="lastName" placeholder="Last Name" class="subscribe-form__input" minlength="2" maxlength="20" required="" type="text">
+                  <button type="button" class="subscribe-form__btn--next">
+                    <i class="fas fa-arrow-right"></i>
+                  </button>
                 </div>
               </div>
-              <span class="evo_c-mini-form__btn--prev" style="left: calc(20.5em - 5px); visibility: hidden; transition-delay: 0s, 0s;"></span>
-
-              <div class="evo_c-mini-form__input-wrap js-mini-form-anim-fadeout-back" style="left: 0.5em;">
-                <div class="evo_c-mini-form__input-inner">
-                  <input name="subscriberEmail" placeholder="Email" class="evo_c-mini-form__input" required="" type="email">
-                  <button type="button" class="evo_c-mini-form__btn--next">
-                      <i class="fas fa-arrow-right"></i></button>
+              <span class="subscribe-form__btn--prev left-custom hidden transition-zero"></span>
+              <!-- email -->
+              <div class="subscribe-form__input-wrap subscribe-form-anim-fadeout-back left-half">
+                <div class="subscribe-form__input-inner">
+                  <input name="subscriberEmail" placeholder="Email" class="subscribe-form__input" required="" type="email">
+                  <button type="button" class="subscribe-form__btn--next">
+                    <i class="fas fa-arrow-right"></i>
+                  </button>
                 </div>
               </div>
-              <span class="evo_c-mini-form__btn--prev" style="left: calc(20em - 5px); visibility: hidden; transition-delay: 0s, 0s;"></span>
-
-              <!-- Last input -->
-              <div class="evo_c-mini-form__input-wrap evo_c-mini-form__submit js-mini-form-anim-fadeout-back" style="left: 0em;">
-                <div class="evo_c-mini-form__input-inner">
-                  <button type="button" class="evo_c-mini-form__btn--back">
+              <span class="subscribe-form__btn--prev left-custom hidden transition-zero"></span>
+              <!-- Subscribe button -->
+              <div class="subscribe-form__input-wrap subscribe-form__submit subscribe-anim-fadeout-back left-zero">
+                <div class="subscribe-form__input-inner">
+                  <button type="button" class="subscribe-form__btn--back">
                     <i class="fas fa-arrow-right">arrow_back</i>
                   </button>
-                  <input name="submit-mailchimp" value="Subscribe" class="md-ganalytics evo_c-mini-form__submit-btn" data-ga-category="Subscribe" data-ga-action="subscribe" data-ga-label="Subscribe for Updates" type="submit">
+                  <input name="submit-mailchimp" value="Subscribe" class="subscribe-form__submit-btn" data-ga-category="Subscribe" data-ga-action="subscribe" data-ga-label="Subscribe for Updates" type="submit">
                 </div>
               </div>
-              <span class="evo_c-mini-form__btn--prev" style="left: calc(19.5em - 5px); visibility: hidden; transition-delay: 0s, 0s;"></span>
-              <div class="evo_c-mini-form__status-message js-status-message" id="mailchimp-generic-subscribe-status"></div>
+              <span class="subscribe-form__btn--prev"></span>
+              <div class="subscribe-form__status-message" id="mailchimp-generic-subscribe-status"></div>
             </form>
           </div>
         </div>  
