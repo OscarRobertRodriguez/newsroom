@@ -11,3 +11,13 @@ function toggleModals(collection) {
         modal.classList.toggle('hidden');
     });
 }
+
+
+var settingsIcon = document.querySelector('.settings-icon');
+var settingsModal = document.querySelector('.modal-settings');
+
+settingsIcon.addEventListener('click', toggleSettingsModal);
+
+function toggleSettingsModal(e) {
+    settingsModal.classList.toggle('hidden');
+}
