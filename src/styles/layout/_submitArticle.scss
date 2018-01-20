@@ -12,7 +12,7 @@
     content: '';
     display: block;
     position: absolute;
-    top: 0;
+    top: 2px;
     right: 4rem;
     border: 12px solid transparent;
     box-sizing: border-box;
@@ -28,7 +28,7 @@
     }
   }
   &__header {
-    background-color: #F66F7A;
+    background-color: $red;
     color: $white;
     margin: 0;
     text-align: center;
