@@ -13,6 +13,146 @@
 <body>
   <div class="page-wrapper">
     <header class='site-header'>
+
+      <!-- settings modal -->
+      <div class="modal modal-settings hidden">
+        <div class="modal-content">
+          <h1 class="settings-header">Select the Technologies That Interest You</h1>
+          <div class="tech-container">
+            <div class="tech-box">
+              <p class="tech-title">Javascript Frameworks/Platforms</p>
+              <!-- Javascript Frameworks/Platforms -->
+              <div class="tech-both-sides">
+                <!-- left checkboxes -->
+                <div class="tech-left-side">
+                  <div class="checkbox-container">
+                    <input class="tech-selection" type="checkbox" name="framework" id="backbone">
+                    <label for="backbone"><span class="checkbox"></span>Backbone.js</label>
+                  </div>
+                  <div class="checkbox-container">
+                    <input class="tech-selection" type="checkbox" name="framework" id="angular">
+                    <label for="angular"><span class="checkbox"></span>Angular.js</label>
+                  </div>
+                  <div class="checkbox-container">
+                    <input class="tech-selection" type="checkbox" name="framework" id="ember">
+                    <label for="ember"><span class="checkbox"></span>Ember.js</label>
+                  </div>
+                </div>
+                <!-- right checkboxes -->
+                <div class="tech-right-side">
+                  <div class="checkbox-container">
+                    <input class="tech-selection" type="checkbox" name="framework" id='node'>
+                    <label for="node"><span class="checkbox"></span>Node.js</label>
+                  </div>
+                  <div class="checkbox-container">
+                    <input class="tech-selection" type="checkbox" name="framework" id='other'>
+                    <label for="other"><span class="checkbox"></span>Other JS Frameworks</label>
+                  </div>
+                  <div class="checkbox-container">
+                    <input class="tech-selection" type="checkbox" name="framework" id='meteor'>
+                    <label for="meteor"><span class="checkbox"></span>Meteor.js</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Programming Languages -->
+            <div class="tech-box">
+              <p class="tech-title">Programming Languages</p>
+              <!-- left checkboxes -->
+              <div class="tech-both-sides">
+                <div class="tech-left-side">
+                  <div class="checkbox-container">
+                    <input class="tech-selection" type="checkbox" name="language" id='rails'>
+                    <label for="rails"><span class="checkbox"></span>Ruby/Rails</label>
+                  </div>
+                  <div class="checkbox-container">
+                    <input class="tech-selection" type="checkbox" name="language" id='javascript'>
+                    <label for="javascript"><span class="checkbox"></span>Javascript</label>
+                  </div>
+                  <div class="checkbox-container">
+                    <input class="tech-selection" type="checkbox" name="language" id='objective-c'>
+                    <label for="objective-c"><span class="checkbox"></span>Objective-C</label>
+                  </div>
+                </div>
+                <!-- right checkboxes -->
+                <div class="tech-right-side">
+                  <div class="checkbox-container">
+                    <input class="tech-selection" type="checkbox" name="language" id='scala'>
+                    <label for="scala"><span class="checkbox"></span>Scala</label>
+                  </div>
+                  <div class="checkbox-container">
+                    <input class="tech-selection" type="checkbox" name="language" id='python'>
+                    <label for="python"><span class="checkbox"></span>Python</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Frontend Development -->
+            <div class="tech-box">
+              <p class="tech-title">Frontend Development</p>
+              <!-- left checkboxes -->
+              <div class="tech-both-sides">
+                <div class="tech-left-side">
+                  <div class="checkbox-container">
+                    <input class="tech-selection" type="checkbox" name="frontend" id='build-tools'>
+                    <label for="build-tools"><span class="checkbox"></span>Frontend Build Tools (Yeoman, Interface Builders, etc)</label>
+                  </div>
+                  <div class="checkbox-container">
+                    <input class="tech-selection" type="checkbox" name="frontend" id='web'>
+                    <label for="web"><span class="checkbox"></span>HTML5 / CSS3 / Responsive Design</label>
+                  </div>
+                  <div class="checkbox-container">
+                    <input class="tech-selection" type="checkbox" name="frontend" id='ui-ux'>
+                    <label for="ui-ux"><span class="checkbox"></span>UI/UX</label>
+                  </div>
+                  <div class="checkbox-container">
+                    <input class="tech-selection" type="checkbox" name="frontend" id='libraries'>
+                    <label for="libraries"><span class="checkbox"></span>Javascript Libraries</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--  Other Web Development Technologies -->
+            <div class="tech-box">
+              <p class="tech-title">Other Web Development Technologies</p>
+              <!-- left checkboxes -->
+              <div class="tech-both-sides">
+                <div class="tech-left-side">
+                  <div class="checkbox-container">
+                    <input class="tech-selection" type="checkbox" name="other" id='mobile'>
+                    <label for="mobile"><span class="checkbox"></span>Mobile Dev (Android, iOS, PhoneGap, etc)</label>
+                  </div>
+                  <div class="checkbox-container">
+                    <input class="tech-selection" type="checkbox" name="other" id='admin'>
+                    <label for="admin"><span class="checkbox"></span>Web App Security, Hosting, and Server Admin</label>
+                  </div>
+                  <div class="checkbox-container">
+                    <input class="tech-selection" type="checkbox" name="other" id='databases'>
+                    <label for="databases"><span class="checkbox"></span>Databases(MongoDB, MySQL, Redis, NoSQL, etc)</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Hot Industry News -->
+          <div class="hot-news-container">
+            <div class="tech-left-side">
+              <div class="checkbox-container">
+                <input class="tech-selection" type="checkbox" name="industry-news" id='news'>
+                <label for="news"><span class="checkbox"></span>Hot Industry News</label>
+              </div>
+            </div>
+          </div>
+          <!-- footer of modal -->
+          <footer class="settings-modal-footer">
+            <span class="settings-modal-footer-item fa fa-info-circle" aria-hidden="true"></span>
+            <div class="submit-tech settings-modal-footer-item">
+              <span class="submit-tech-item">Go</span>
+              <span class=" submit-tech-item fa fa-angle-right" aria-hidden="true"> </span>
+            </div>
+          </footer>
+        </div>
+      </div>
       <!-- page title / icons -->
       <div class="header-wrapper">
         <span class="header-wrapper-item fa fa-file-o"></span>
@@ -168,7 +308,7 @@
           <!-- the design says First Name, but I suspect this would make more sense as 'email'? -->
           <label for="footer-name">Subscribe to DevNews Daily</label>
           <fieldset>
-            <input type="text" id="#footer-name" name="footer-name" placeholder="First Name">
+            <input type="text" id="footer-name" name="footer-name" placeholder="First Name">
             <a href="#">
               <span class="fas fa-arrow-right"></span>
             </a>
@@ -178,5 +318,4 @@
     </footer>
   </div>
 </body>
-
 </html>

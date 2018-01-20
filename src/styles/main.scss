@@ -1,5 +1,6 @@
 @import 'base/colors';
 @import 'base/typography';
+@import 'base/_helperClasses';
 
 // layout
 @import 'layout/layout';
@@ -9,3 +10,4 @@
 
 //components 
 @import 'components/media-object';
+@import 'components/settingsModal';
