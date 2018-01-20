@@ -10,6 +10,8 @@
   height: 670px;
   width: 1000px;
   z-index: 100;
+  -webkit-animation: .2s settingsModalTrans cubic-bezier(0.94, 0.25, 1, 1);
+  animation: .2s settingsModalTrans cubic-bezier(0.94, 0.25, 1, 1);
 }
 
 .modal-content {
@@ -163,4 +165,9 @@
 
 .settings-modal-footer-item:last-child {
   margin-left: auto;
+}
+
+@keyframes settingsModalTrans {
+  0%   {opacity: 0;}
+  100% {opacity: 1;}
 }
