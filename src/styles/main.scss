@@ -1,9 +1,11 @@
 @import 'base/colors';
 @import 'base/typography';
-@import 'layout/layout';
 
-// components
+// layout
+@import 'layout/layout';
 @import 'layout/header';
-@import 'components/topNews'; 
-@import 'components/footer';
+@import 'layout/topNews';
+@import 'layout/footer';
+
+//components 
 @import 'components/media-object';
