@@ -1,118 +1,102 @@
-
 .site-header {
   color: $mediumBlack;
   font-family: $fontType;
 }
 
-
-.mainNav {
+.main-nav {
   display: flex;
   align-items: center;
   margin-left: 12px;
-  margin-right:45px;
-  margin-top:15px;
-
+  margin-right: 45px;
+  margin-top: 15px;
 }
 
-
-.mainNavItem {
-  padding:0 25px;
+.main-nav-item {
+  padding: 0 25px;
   font-size: 110%;
 }
 
-
-.mainNavItem a {
+.main-nav-item a {
   color: $mediumBlack;
   text-decoration: none;
 }
 
-
-.mainNavItem a:hover,
-.searchIcon,
-.settingsIcon {
+.main-nav-item a:hover,
+.search-icon,
+.settings-icon {
   cursor: pointer;
 }
 
-
-.mainNavItem:first-child {
-  margin-left:20px;
-  padding:0;
+.main-nav-item:first-child {
+  margin-left: 20px;
+  padding: 0;
   padding-right: 20px;
 }
 
-
-.mainNavItem:nth-child(7) {
+.main-nav-item:nth-child(7) {
   margin-left: auto;
-  padding-right:0;
+  padding-right: 0;
 }
 
-.mainNavItem:last-child {
+.main-nav-item:last-child {
   border-radius: 50%;
-  padding:0;
-  margin-left:10px;
+  padding: 0;
+  margin-left: 10px;
 }
 
-
-.headerWrapper {
+.header-wrapper  {
   // margin-top:10px;
   display: flex;
   align-items: flex-end;
-  margin-left:20px;
+  margin-left: 20px;
   margin-right: 60px;
 }
 
 
-.headerWrapperItem:first-child {
+.header-wrapper-item:first-child {
   // padding:10px;
   padding: 0 10px;
   font-size: 55px;
 }
 
-
-.headerWrapperItem:nth-child(2) {
+.header-wrapper-item:nth-child(2) {
   // padding:10px;
   font-weight: 500;
   font-size: 50px;
-  margin-bottom:0;
+  margin-bottom: 0;
 }
 
-
-.headerWrapperItem:last-child {
+.header-wrapper-item:last-child {
   margin-left: auto;
 }
 
-
-.headerIconsItem:last-child {
+.header-icons-item:last-child {
   margin-bottom: 8px;
-  padding-top:20px;
+  padding-top: 20px;
 }
 
-
-.headerIcons {
+.header-icons {
   display: flex;
   flex-direction: column;
 }
 
-
-.settingsIcon,
-.searchIcon {
+.settings-icon,
+.search-icon {
   font-size: 22px;
 }
 
-
-.profileImg  {
+.profile-img  {
   border-radius: 50%;
-  width:100%;
+  width: 100%;
   height: 100%;
 }
 
-.profileImgContainer {
-  height:50px;
-  width:50px;
+.profile-img-container {
+  height: 50px;
+  width: 50px;
 }
 
-
-.profileName {
+.profile-name {
   font-weight: 600;
   font-size: 70%;
 }
