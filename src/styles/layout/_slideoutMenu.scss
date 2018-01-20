@@ -1,8 +1,100 @@
 .slideout-menu {
   width: 100%;
+  max-width: 350px;
   position: absolute;
   top: 50%;
   right: 0;
   transform: translateY(-50%);
-  border: 1px solid black;
+
+   &__ic-whatshot,
+   &__ic-turned-in-not,
+   &__ic-notification {
+     padding: 1rem;
+     text-align: center;
+     cursor: pointer;
+     border-width: 2px;
+     border-style: solid;
+     margin: 0.45rem 0;
+     width: 40px;
+     height: 40px;
+     position: absolute;
+     right: 0;
+    }
+
+   &__ic-whatshot {
+     background: $blue;
+     border-color: $blue;
+    }
+
+   &__ic-turned-in-not {
+     background: $green;
+     border-color: $green;
+    }   
+
+   &__ic-notification {
+     background: $orange;
+     border-color: $orange;
+   }    
+
+    &__icons {
+     width: 100%;
+     max-width: 15px;
+     height: auto;
+    }
+
+    &__menu-content {
+     padding: 1.5rem;  
+     position: absolute;
+     top: 50%;
+     right: 0;
+     transform: translateY(-50%) ;
+     background: $white;
+    }
+
+    &__menu-content-heading {
+     font-weight: 500;
+     font-size: $baseFontSize*1.5;
+    }
+
+    &__menu-content-list {
+     list-style-type: none;
+     padding: 0;
+    }
+
+    &__menu-content-list-item {
+     font-weight: 500;
+     padding: 0.8rem 0;  	
+     font-size: $baseFontSize*1.07;
+     position: relative;
+
+       &::after {
+         content: "";
+         display: block;
+         position: absolute;
+         margin-left: 1rem;
+         padding: 0.8rem;
+         right: 0;
+         top: 0;
+         width: 17px;
+         height: 17px;
+         border: 1px solid black;
+         background: url(../assets/images/icons/ic_launch.png) no-repeat;
+         opacity: 0.15;
+       }
+    }
+
+    &--whatshot {
+     color: $blue;
+     border: 2px solid $blue;
+    }
+
+    &--turned-in-not {
+     color: $green;
+     border: 2px solid $green;
+    }
+
+    &--notification {
+     color: $orange;
+     border: 2px solid $orange;
+    }
 }
