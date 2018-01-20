@@ -4,7 +4,10 @@
   border-radius: 2.5px;
   border: 2px solid $red;
   font-weight: 200;
+  background-color: $white;
   position: relative;
+  top: 100px;
+  left: 500px;
   &::after {
     content: '';
     display: block;
@@ -30,11 +33,13 @@
     margin: 0;
     text-align: center;
     padding: 14px 0;
+    font-weight: 200;
   }
   &__inputs {
     padding: 11px 16px;
     margin: auto 15px;
     font-size: 90%;
+    position: relative;
   }
   &__input {
     display: block;
@@ -48,7 +53,6 @@
       font-size: 75%;
       letter-spacing: .9px;
     }
-    ;
     &-select,
     &-textarea {
       &-label {
@@ -62,17 +66,16 @@
     }
     &-select {
       height: 30px;
-
-      &::after {
-        content: '';
-        display: block;
-        position: absolute;
-        top: 0;
-        right: 4rem;
-        border: 12px solid transparent;
-        box-sizing: border-box;
-        border-bottom: 16px solid $red;
-        transform: translateY(-100%);
+      &-arrow {
+        position: relative;
+        left: 330px;
+        top: -41px;
+        color: $red;
+        pointer-events: none;
+        font-size: 14px;
+      }
+      &:hover {
+        cursor: pointer;
       }
     }
     &-textarea {
@@ -93,19 +96,28 @@
     color: $white;
     padding: 13px 0;
     width: 200px;
+    font-weight: 700;
+    letter-spacing: .6px;
     &:hover {
       cursor: pointer;
       outline: 0;
       box-shadow: 0 0 5px 1px rgba(0, 0, 0, .2);
+      transition: background-color 500ms ease;
+      background-color: darken($red,2%);
+    }
+    &:active {
+      transition: background-color 100ms ease-in-out;
+      background-color: darken($red,10%);
     }
     &:focus {
       outline: 0;
     }
-    .far {
+    &-icon {
       padding-right: 7px;
       position: relative;
       top: 1px;
       font-size: 18px;
+      pointer-events: none;
     }
   }
 }
