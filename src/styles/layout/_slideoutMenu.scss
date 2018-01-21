@@ -77,13 +77,13 @@ html {
      max-width: 270px;
      height: 520px;
      overflow: hidden;
-     padding-bottom: 0.3rem;
      transition: all 0.5s ease;
     }
 
     &__content-heading {
      font-weight: 500;
      font-size: $baseFontSize*1.5;
+     margin-top: 0;
     }
 
     &__content-list {
@@ -108,6 +108,15 @@ html {
       position: relative;
       border: 1px solid $red;
       margin: 1.3rem 0;	
+    }
+
+    &__gradient-bg {
+      background: linear-gradient(to bottom, rgba(255,0,0,0), rgba(255,255,255,1));
+      height: 100px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
     }
 
     &--whatshot {
@@ -199,7 +208,6 @@ html {
   border-right: 1px solid $white;
   right: 320px;
   width: 47px;
-
 }
 
 #slideout-menu-icon-whatshot:checked + label.slideout-menu__ic-whatshot + div,
