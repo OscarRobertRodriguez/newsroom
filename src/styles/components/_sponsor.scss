@@ -1,5 +1,5 @@
 .sponsor {
-	margin: 75px 0px;
+  margin: 75px 0px;
   border-top: 2px solid darken($lightGray,8%);
   border-bottom: 2px solid darken($lightGray,8%);
   height: 212px;
@@ -14,12 +14,12 @@
       position: relative;
       
   }
-	.sponsor-content {
+  .sponsor-content {
     display: block;
-		background-color: $white;
-		position: relative;
-		margin: inherit 50px;
-	}
+    background-color: $white;
+    position: relative;
+    margin: inherit 50px;
+  }
 }
 .bov-c-header__slogan {
   padding-left: 1.5rem;
