@@ -78,7 +78,11 @@
 
 .header-icons {
   display: flex;
-  flex-direction: column;
+  flex-direction: column;  
+}
+
+.header-icons .search-icon {
+  margin-bottom: 10px;
 }
 
 .settings-icon,
@@ -95,6 +99,7 @@
 .profile-img-container {
   height: 50px;
   width: 50px;
+  margin-bottom: 10px;
 }
 
 .profile-name {
