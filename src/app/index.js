@@ -7,5 +7,3 @@ import '../assets/images/meTest.jpg';
 // import './scripts/examples/examples';
 import './scripts/components/categorySwitcher';
 import mediaOjectTwitter from './scripts/mediaObjectTwitter';
-
-import './scripts/examples/examples';
