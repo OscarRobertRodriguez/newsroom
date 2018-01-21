@@ -2,12 +2,12 @@
   display: inline-grid;
   grid-template-columns: 1fr 3fr;
   max-width: 38%;
-  margin-top:30px;
+  margin-top: 30px;
   margin-bottom: 30px;
   margin-left:0;
 
   .tw-user-handle {
-    padding-left:4px;
+    padding-left: 4px;
   }
 
   .tw-user {
@@ -59,7 +59,7 @@
 
   .tw-message {
     padding: 0 20px;
-    padding-top:15px;
+    padding-top: 15px;
     padding-bottom: 0;
     grid-column: span 2;
     padding-left: 0;
@@ -69,9 +69,9 @@
   .tw-posted-on {
     color: $medGray;
     padding: 15px 20px 10px;
-    padding-top:15px;
+    padding-top: 15px;
     padding-bottom: 15px;
-    padding-left:0;
+    padding-left: 0;
     padding-right: 0;
     font-weight: bold;
     font-size: 0.85rem;
@@ -89,7 +89,7 @@
 
   .tw-action {
     // padding: 10px 20px 10px 0;
-    padding-top:10px;
+    padding-top: 10px;
     padding-bottom: 10px;
     padding-right: 20px;
     padding-left: 0;
