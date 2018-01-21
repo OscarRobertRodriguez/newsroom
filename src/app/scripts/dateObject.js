@@ -17,8 +17,8 @@ var dayNames = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Sat
 var currentDayName = dayNames[currentDay];
 
 // SET ALL VARIABLES ON PAGE
-var dayNumberPlaceHodler = document.querySelectorAll(".js-date-dayNumber");
-dayNumberPlaceHodler.forEach(function(dayNumbers){
+var dayNumberPlaceHolder = document.querySelectorAll(".js-date-dayNumber");
+dayNumberPlaceHolder.forEach(function(dayNumbers){
 	dayNumbers.innerText = currentDayNumber;
 })
 var dayOfTheWeekPlaceHolder = document.querySelectorAll(".js-date-dayOfTheWeek");
