@@ -15,10 +15,11 @@ $lightBlue: darken($blue, 0);
 
 // blacks
 $black: rgb(0, 0, 0);
-$mediumBlack: lighten($black, 20);
+$mediumBlack: lighten($black, 20); //dont change
+$lightBlack: lighen($black, 40); //dont change
 
 // grays
-$gray: lighten($black, 30);
-$lightGray: lighten($black,75);
+$gray: rgb(128, 128, 128); //dont change
+$lightGray: lighten($gray,46); //dont change
 $medGray: lighten($black, 45);
 

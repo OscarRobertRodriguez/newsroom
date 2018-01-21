@@ -3,30 +3,28 @@
   padding-top: 144px;
   padding-left: 66px;
   box-sizing: border-box;
-  * { box-sizing: inherit; }
+  * {
+    box-sizing: inherit;
+  }
   .category {
     position: absolute;
-    transition: top .2s 0s ease-in-out, left .2s 0s ease-in-out;
     .category-title {
       font-size: 1rem;
       position: relative;
       padding-left: 22px;
       margin: 0;
       line-height: 48px;
-      color: $lightGray;
+      color: $gray;
       font-weight: 100;
       width: 300px;
       height: 300px;
-      border-left: 1px solid $lightGray;
-      border-top: 1px solid $lightGray;
+      border-left: 1px solid $gray;
+      border-top: 1px solid $gray;
       cursor: pointer;
-      transition: font .2s 0s ease-in-out;
     }
     .category-content {
       opacity: 0;
       pointer-events: none;
-      transition: opacity .2s 0s ease-in-out;
-      min-height: 400px; // TEMP VALUE
     }
     &.category-active {
       margin-bottom: 40px;
@@ -49,9 +47,45 @@
       .category-content {
         opacity: 1;
         pointer-events: all;
+        display: inline-block;
       }
     }
-    &[data-layer="0"]  {
+    .category-title--right {
+      position: relative;
+      vertical-align: middle;
+      margin-top: 50px;
+      margin-right: 260px;
+      margin-bottom: 50px;
+      float: right;
+      text-align: right;
+      display: inline-block;
+      color: #999;
+      .category-current-date {
+        display: block;
+        font-size: 45px;
+        letter-spacing: 1.9px;
+        margin: 0;
+        &--narrow {
+          font-weight: 200;
+        }
+        &--bold {
+          font-weight: 700;
+        }
+      }
+      .category-sort {
+        font-size: 36px;
+        margin-top: 24px;
+        display: inline-block;
+        padding-right: 26px;
+        &--selected {
+          color: $red;
+        }
+        &:last-child {
+          padding-right: 0;
+        }
+      }
+    }
+    &[data-layer="0"] {
       z-index: 1000;
     }
     &[data-layer="1"] {
@@ -59,6 +93,16 @@
     }
     &[data-layer="2"] {
       z-index: 3000;
+    }
+  }
+  // transitions
+  .category {
+    transition: top .5s 0s ease-in-out, left .5s 0s ease-in-out;
+    .category-title {
+      //transition: font .5s 0s ease-in-out;
+    }
+    .category-content {
+      transition: opacity .5s 0s ease-in-out;
     }
   }
 }
