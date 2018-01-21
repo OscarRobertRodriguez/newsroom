@@ -26,9 +26,16 @@ body {
   width: 100%;
 }
 
+.top-news {
+  background: orange;
+}
 
 .twitter-news {
   padding: 20px;
+
+  .twitter-topic-heading{
+    margin: 75px 0 0;
+  }
 
   .twitterLogo {
     width: 60px;
