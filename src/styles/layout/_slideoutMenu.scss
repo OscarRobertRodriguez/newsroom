@@ -1,40 +1,64 @@
+html {
+  overflow: hidden;
+}
 .slideout-menu {
   width: 100%;
-  max-width: 350px;
+  height: 100%;
+  max-width: 320px;
   position: absolute;
-  top: 50%;
+  top: 45%;
   right: 0;
-  transform: translateY(-50%);
+  transform: translateY(-45%);
 
    &__ic-whatshot,
-   &__ic-turned-in-not,
+   &__ic-bookmark,
    &__ic-notification {
-     padding: 1rem;
-     text-align: center;
      cursor: pointer;
      border-width: 2px;
      border-style: solid;
      margin: 0.45rem 0;
-     width: 40px;
-     height: 40px;
+     width: 36px;
+     height: 36px;
      position: absolute;
      right: 0;
+     color: $white;
+     transition: all 0.5s ease;
+
+       &:hover {
+         background: $white;	
+       }
     }
 
    &__ic-whatshot {
+     top: 500px;	
      background: $blue;
      border-color: $blue;
+
+       &:hover {
+       	color: $blue;
+       }
     }
 
-   &__ic-turned-in-not {
+   &__ic-bookmark {
+     top: 546px;
      background: $green;
      border-color: $green;
+
+       &:hover {
+       	color: $green;
+       }
     }   
 
    &__ic-notification {
+     top: 592px;
      background: $orange;
      border-color: $orange;
-   }    
+
+       &:hover {
+       	color: $orange;
+       }
+   }
+
 
     &__icons {
      width: 100%;
@@ -42,52 +66,47 @@
      height: auto;
     }
 
-    &__menu-content {
+    &__content {
      padding: 1.5rem;  
      position: absolute;
-     top: 50%;
-     right: 0;
-     transform: translateY(-50%) ;
+     top: 507px;
+     right: -322px;
      background: $white;
+     width: 100%;
+     max-width: 270px;
+     height: 520px;
+     overflow: hidden;
+     padding-bottom: 0.3rem;
+     transition: all 0.5s ease;
     }
 
-    &__menu-content-heading {
+    &__content-heading {
      font-weight: 500;
      font-size: $baseFontSize*1.5;
     }
 
-    &__menu-content-list {
+    &__content-list {
      list-style-type: none;
      padding: 0;
     }
 
-    &__menu-content-list-item {
+    &__content-list-item {
      font-weight: 500;
      padding: 0.8rem 0;  	
      font-size: $baseFontSize*1.07;
      position: relative;
 
-       &::after {
-         content: "";
-         display: block;
-         position: absolute;
-         padding: 0.8rem;
-         right: 0;
-         top: 0;
-         width: 15px;
-         height: 15px;
-         background: red;
-         background: url(../assets/images/icons/ic-launch.png) 17px 17px no-repeat ;
-         opacity: 0.15;
-         cursor: pointer;
-         transition: 0.5s ease;
+       &-head {
+         max-width: 230px;
+         margin-right: 0.5rem;
        }
+    }
 
-       &:hover::after {
-         opacity: 0.4;
-       }
-
-
+    &__content-list-item-title {
+      padding: 0.3rem 0.5rem;  
+      position: relative;
+      border: 1px solid $red;
+      margin: 1.3rem 0;	
     }
 
     &--whatshot {
@@ -95,7 +114,7 @@
      border: 2px solid $blue;
     }
 
-    &--turned-in-not {
+    &--bookmark {
      color: $green;
      border: 2px solid $green;
     }
@@ -104,4 +123,78 @@
      color: $orange;
      border: 2px solid $orange;
     }
+
+    &--icons {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+    }
+
+    &--icons-list-item {
+     color: $lightGray;  
+     position: absolute;
+     right: 0;
+     top: 0; 
+     margin-top: 13px; 
+     transition: all 0.5s ease;	
+
+       &:hover {
+       	color: $gray;
+       }
+    }
+
+    &--icons-list-item-close {
+     position: absolute;
+     left: 0;
+     top: 13px; 
+     margin-right: 0.5rem;
+     color: $lightGray;
+     transition: all 0.5s ease;
+
+       &:hover {
+         color: $gray;
+       }
+    }
+
+    &--title {
+     margin-left: 35px;    	
+     display: inline-block;
+    }
+
+    &--title-action,
+    &--title-action-close {
+      color: $red;
+      font-size: $smFontSize;     	
+    }
+
+    &--title-action-close {
+      position: absolute;
+      top: 55%;
+      right: 8px;
+      transform: translateY(-55%);
+    }
+}
+
+.icon-small { 
+  font-size: $baseFontSize; 
+}
+
+#slideout-menu-icon-whatshot,
+#slideout-menu-icon-bookmark,
+#slideout-menu-icon-notification {
+  display: none;	
+}
+
+#slideout-menu-icon-whatshot:checked + label.slideout-menu__ic-whatshot,
+#slideout-menu-icon-whatshot:checked ~ label.slideout-menu__ic-bookmark,
+#slideout-menu-icon-whatshot:checked ~ label.slideout-menu__ic-notification {
+  right: 322px;
+}
+
+#slideout-menu-icon-whatshot:checked + label.slideout-menu__ic-whatshot + div,
+#slideout-menu-icon-bookmark:checked + label.slideout-menu__ic-bookmark + div,
+#slideout-menu-icon-notification:checked + label.slideout-menu__ic-notification + div {
+  right: 0;
+  z-index: 10;
 }

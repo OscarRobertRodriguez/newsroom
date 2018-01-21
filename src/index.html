@@ -194,51 +194,164 @@
       </nav>
     </header>
 
-    <!-- slideout menu start-->
-    <section class="slideout-menu">
-      <div class="slideout-menu__ic-whatshot">
-        <img class="slideout-menu__icons" src="assets/images/icons/ic-whatshot.png" alt="Most Popular Today">
-      </div>
-<!--       <div class="slideout-menu__menu-content slideout-menu--whatshot">
-        <h1 class="slideout-menu__menu-content-heading">Most Popular Today</h1>
-        <ul class="slideout-menu__menu-content-list">
-          <li class="slideout-menu__menu-content-list-item">A huge collection of SVGs, now powered by React.js</li>
-          <li class="slideout-menu__menu-content-list-item">Artificial intelligence and internet music culture</li>
-          <li class="slideout-menu__menu-content-list-item">Google.ai aims to make state of the art AI advances accessible to everyone</li>
-          <li class="slideout-menu__menu-content-list-item">Deep Algo offers simple code visualization for non-coders</li>
-          <li class="slideout-menu__menu-content-list-item">A huge collection of SVGs, now powered by React.js</li>
+    <!-- slideout menu start -->
+    <section class="slideout-menu"> 
+      <!-- slideout menu - most popular today -->
+      <input type="checkbox" id="slideout-menu-icon-whatshot">
+      <label for="slideout-menu-icon-whatshot" class="slideout-menu__ic-whatshot">
+        <i class="material-icons slideout-menu--icons" title="Most Popular Today">whatshot</i>
+      </label>
+      
+      <!-- slideout menu - most popular today content -->
+      <div class="slideout-menu__content slideout-menu--whatshot">
+        <h1 class="slideout-menu__content-heading">Most Popular Today</h1>
+        <ul class="slideout-menu__content-list">
+          <li class="slideout-menu__content-list-item">
+            <div class="slideout-menu__content-list-item-head">A huge collection of SVGs, now powered by React.js
+               <a href="#" class="slideout-menu--icons-list-item"><i class="material-icons" title="Launch">open_in_new</i></a>
+            </div>
+          </li>
+          <li class="slideout-menu__content-list-item">
+            <div class="slideout-menu__content-list-item-head">Artificial intelligence and internet music culture
+               <a href="#" class="slideout-menu--icons-list-item"><i class="material-icons" title="Launch">open_in_new</i></a>
+           </div>
+          </li>
+          <li class="slideout-menu__content-list-item">
+            <div class="slideout-menu__content-list-item-head">Google.ai aims to make state of the art AI advances accessible to everyone
+              <a href="#" class="slideout-menu--icons-list-item"><i class="material-icons" title="Launch">open_in_new</i></a>
+            </div>
+          </li>
+          <li class="slideout-menu__content-list-item">
+            <div class="slideout-menu__content-list-item-head">Deep Algo offers simple code visualization for non-coders
+                <a href="#" class="slideout-menu--icons-list-item"><i class="material-icons" title="Launch">open_in_new</i></a>
+            </div>
+          </li>
+          <li class="slideout-menu__content-list-item">
+            <div class="slideout-menu__content-list-item-head">A huge collection of SVGs, now powered by React.js
+               <a href="#" class="slideout-menu--icons-list-item"><i class="material-icons" title="Launch">open_in_new</i></a>
+            </div>
+          </li>
+          <li class="slideout-menu__content-list-item">
+            <div class="slideout-menu__content-list-item-head">Google.ai aims to make state of the art AI advances accessible to everyone
+              <a href="#" class="slideout-menu--icons-list-item"><i class="material-icons" title="Launch">open_in_new</i></a>
+            </div>
+          </li>
         </ul>
-      </div> -->
+      </div>
 
-      <div class="slideout-menu__ic-turned-in-not">
-        <img class="slideout-menu__icons" src="assets/images/icons/ic-turned-in-not.png" alt="Read Soon">
-      </div>
-<!--       <div class="slideout-menu__menu-content slideout-menu--turned-in-not">
-        <h1 class="slideout-menu__menu-content-heading">Read Soon</h1>
-        <ul class="slideout-menu__menu-content-list">
-          <li class="slideout-menu__menu-content-list-item">A huge collection of SVGs, now powered by React.js</li>
-          <li class="slideout-menu__menu-content-list-item">Artificial intelligence and internet music culture</li>
-          <li class="slideout-menu__menu-content-list-item">Google.ai aims to make state of the art AI advances accessible to everyone</li>
-          <li class="slideout-menu__menu-content-list-item">Deep Algo offers simple code visualization for non-coders</li>
-          <li class="slideout-menu__menu-content-list-item">A huge collection of SVGs, now powered by React.js</li>
-        </ul>
-      </div> -->
+      <!-- slideout menu - read soon --> 
+      <input type="checkbox" id="slideout-menu-icon-bookmark">
+      <label for="slideout-menu-icon-bookmark" class="slideout-menu__ic-bookmark">
+        <i class="material-icons slideout-menu--icons" title="Read Soon">bookmark_border</i>
+      </label>
 
-      <div class="slideout-menu__ic-notification">
-       <i class="material-icons">face</i>
-      </div>
-<!--       <div class="slideout-menu__menu-content slideout-menu--notification">
-        <h1 class="slideout-menu__menu-content-heading">Notifications</h1>
-        <ul class="slideout-menu__menu-content-list">
-          <li class="slideout-menu__menu-content-list-item">A huge collection of SVGs, now powered by React.js</li>
-          <li class="slideout-menu__menu-content-list-item">Artificial intelligence and internet music culture</li>
-          <li class="slideout-menu__menu-content-list-item">Google.ai aims to make state of the art AI advances accessible to everyone</li>
-          <li class="slideout-menu__menu-content-list-item">Deep Algo offers simple code visualization for non-coders</li>
-          <li class="slideout-menu__menu-content-list-item">A huge collection of SVGs, now powered by React.js</li>
+      <!-- slideout menu - read soon content -->
+      <div class="slideout-menu__content slideout-menu--bookmark">
+        <h1 class="slideout-menu__content-heading">Read Soon</h1>
+        <ul class="slideout-menu__content-list">
+           <li class="slideout-menu__content-list-item-title">
+            <div class="slideout-menu--title-action">Expiring Today at 4:00pm</div>
+            <a href="#" class="slideout-menu--title-action-close "><i class="material-icons icon-small" title="Remove">close</i></a>
+          </li>
+          <li class="slideout-menu__content-list-item">
+            <div class="slideout-menu__content-list-item-head">
+              <a href="#" class="slideout-menu--icons-list-item-close"><i class="material-icons icon-small" title="Remove">close</i></a>
+               <div class="slideout-menu--title">A huge collection of SVGs, now powered by React.js</div>
+               <a href="#" class="slideout-menu--icons-list-item"><i class="material-icons" title="Launch">open_in_new</i></a>
+            </div>
+          </li>
+          <li class="slideout-menu__content-list-item">
+            <div class="slideout-menu__content-list-item-head">
+              <a href="#" class="slideout-menu--icons-list-item-close"><i class="material-icons icon-small" title="Remove">close</i></a>
+               <div class="slideout-menu--title">Artificial intelligence and internet music culture</div>
+               <a href="#" class="slideout-menu--icons-list-item"><i class="material-icons" title="Launch">open_in_new</i></a>
+           </div>
+          </li>
+          <li class="slideout-menu__content-list-item-title">
+            <div class="slideout-menu--title-action">Expiring Tomorrow</div>
+           <a href="#" class="slideout-menu--title-action-close "><i class="material-icons icon-small" title="Remove">close</i></a>
+          </li>
+          <li class="slideout-menu__content-list-item">
+            <div class="slideout-menu__content-list-item-head">
+              <a href="#" class="slideout-menu--icons-list-item-close"><i class="material-icons icon-small" title="Remove">close</i></a>
+               <div class="slideout-menu--title">Google.ai aims to make state of the art AI advances accessible to everyone</div>
+               <a href="#" class="slideout-menu--icons-list-item"><i class="material-icons" title="Launch">open_in_new</i></a>
+            </div>
+          </li>
+          <li class="slideout-menu__content-list-item">
+            <div class="slideout-menu__content-list-item-head">
+              <a href="#" class="slideout-menu--icons-list-item-close"><i class="material-icons icon-small" title="Remove">close</i></a>
+               <div class="slideout-menu--title">Deep Algo offers simple code visualization for non-coders</div>
+               <a href="#" class="slideout-menu--icons-list-item"><i class="material-icons" title="Launch">open_in_new</i></a>
+            </div>
+          </li>
+          <li class="slideout-menu__content-list-item">
+            <div class="slideout-menu__content-list-item-head">
+              <a href="#" class="slideout-menu--icons-list-item-close"><i class="material-icons icon-small" title="Remove">close</i></a>
+               <div class="slideout-menu--title">A huge collection of SVGs, now powered by React.js</div>
+               <a href="#" class="slideout-menu--icons-list-item"><i class="material-icons" title="Launch">open_in_new</i></a>
+            </div>
+          </li>
         </ul>
-      </div> -->
+      </div>
+
+      <!-- slideout menu - notifications --> 
+      <input type="checkbox" id="slideout-menu-icon-notification">
+      <label for="slideout-menu-icon-notification" class="slideout-menu__ic-notification">
+        <i class="material-icons slideout-menu--icons" title="Notifications">notifications</i>
+      </label>
+
+      <!-- slideout menu - notifications content --> 
+      <div class="slideout-menu__content slideout-menu--notification">
+        <h1 class="slideout-menu__content-heading">Notifications</h1>
+        <ul class="slideout-menu__content-list">
+          <li class="slideout-menu__content-list-item-title">
+            <div class="slideout-menu--title-action">Comments</div>
+           <a href="#" class="slideout-menu--title-action-close "><i class="material-icons icon-small" title="Remove">close</i></a>
+          </li>
+          <li class="slideout-menu__content-list-item">
+            <div class="slideout-menu__content-list-item-head">
+               <a href="#" class="slideout-menu--icons-list-item-close"><i class="material-icons icon-small" title="Remove">close</i></a>
+               <div class="slideout-menu--title">A huge collection of SVGs, now powered by React.js</div>
+               <a href="#" class="slideout-menu--icons-list-item"><i class="material-icons" title="Launch">open_in_new</i></a>
+            </div>
+          </li>
+          <li class="slideout-menu__content-list-item">
+            <div class="slideout-menu__content-list-item-head">
+              <a href="#" class="slideout-menu--icons-list-item-close"><i class="material-icons icon-small" title="Remove">close</i></a>
+               <div class="slideout-menu--title">Artificial intelligence and internet music culture</div>
+               <a href="#" class="slideout-menu--icons-list-item"><i class="material-icons" title="Launch">open_in_new</i></a>
+           </div>
+          </li>
+           <li class="slideout-menu__content-list-item-title">
+            <div class="slideout-menu--title-action">Must Reads</div>
+           <a href="#" class="slideout-menu--title-action-close "><i class="material-icons icon-small" title="Remove">close</i></a>
+          </li>
+          <li class="slideout-menu__content-list-item">
+            <div class="slideout-menu__content-list-item-head">
+              <a href="#" class="slideout-menu--icons-list-item-close"><i class="material-icons icon-small" title="Remove">close</i></a>
+               <div class="slideout-menu--title">Google.ai aims to make state of the art AI advances accessible to everyone</div>
+               <a href="#" class="slideout-menu--icons-list-item"><i class="material-icons" title="Launch">open_in_new</i></a>
+            </div>
+          </li>
+          <li class="slideout-menu__content-list-item">
+            <div class="slideout-menu__content-list-item-head">
+              <a href="#" class="slideout-menu--icons-list-item-close"><i class="material-icons icon-small" title="Remove">close</i></a>
+               <div class="slideout-menu--title">Deep Algo offers simple code visualization for non-coders</div>
+               <a href="#" class="slideout-menu--icons-list-item"><i class="material-icons" title="Launch">open_in_new</i></a>
+            </div>
+          </li>
+          <li class="slideout-menu__content-list-item">
+            <div class="slideout-menu__content-list-item-head">
+              <a href="#" class="slideout-menu--icons-list-item-close"><i class="material-icons icon-small" title="Remove">close</i></a>
+               <div class="slideout-menu--title">A huge collection of SVGs, now powered by React.js</div>
+               <a href="#" class="slideout-menu--icons-list-item"><i class="material-icons" title="Launch">open_in_new</i></a>
+            </div>
+          </li>
+        </ul>
+      </div>
     </section>
-    <!-- slideout menu end-->
+    <!-- slideout menu end -->
 
     <section class='top-news'>
       <div class="border-corner--triple"></div>
