@@ -58,7 +58,7 @@ module.exports = {
       },
       // look for all image types 
       {
-        test: /.*\.(gif|png|jpe?g)$/i, 
+        test: /.*\.(svg|gif|png|jpe?g)$/i,
         use: [
           {
             loader: 'url-loader',

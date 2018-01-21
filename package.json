@@ -37,9 +37,10 @@
     "uglifyjs-webpack-plugin": "^1.1.6",
     "url-loader": "^0.6.2",
     "webpack": "^3.10.0",
-    "webpack-dev-server": "^2.11.0"
+    "webpack-dev-server": "^2.11.1"
   },
   "dependencies": {
+    "material-design-icons": "^3.0.1",
     "normalize.css": "^7.0.0"
   }
 }

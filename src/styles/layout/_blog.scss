@@ -1,0 +1,115 @@
+.blog {
+  position: relative;
+  padding-top: 144px;
+  padding-left: 66px;
+  box-sizing: border-box;
+  * {
+    box-sizing: inherit;
+  }
+  .category {
+    position: absolute;
+    top: 144px;
+    cursor: pointer;
+    .category-title {
+      font-size: 1rem;
+      position: relative;
+      padding-left: 22px;
+      margin: 0;
+      line-height: 48px;
+      color: $lightGray;
+      font-weight: 100;
+    }
+    &.category-active {
+      min-height: 400px; // TEMP VALUE
+      margin-bottom: 40px;
+      position: relative;
+      top: 0;
+      left: 0;
+      border-left: 1px solid $red;
+      border-top: 1px solid $red;
+      background-color: $white;
+      cursor: auto;
+      .category-title {
+        font-size: 55px;
+        font-weight: 600;
+        color: $red;
+        padding-left: 45px;
+        display: inline-block;
+      }
+    }
+    .category-title--right {
+      position: relative;
+      vertical-align: middle;
+      left: 260px;
+      margin-top: 50px;
+      text-align: right;
+      display: inline-block;
+      color: #999;
+      .category-current-date {
+        display: block;
+        font-size: 45px;
+        letter-spacing: 1.9px;
+        margin: 0;
+        &--narrow {
+          font-weight: 200;
+        }
+        &--bold {
+          font-weight: 700;
+        }
+      }
+      .category-sort {
+        font-size: 36px;
+        margin-top: 24px;
+        display: inline-block;
+        padding-right: 26px;
+        &--selected {
+          color: $red;
+        }
+        &:last-child {
+          padding-right: 0;
+        }
+      }
+    }
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 300px;
+      height: 300px;
+      border-left: 1px solid $lightGray;
+      border-top: 1px solid $lightGray;
+    }
+    &[data-layer="1"] {
+      .category-title,
+      &::before {
+        left: -66px;
+        top: -144px;
+      }
+    }
+    &[data-layer="2"] {
+      .category-title,
+      &::before {
+        left: -44px;
+        top: -96px;
+      }
+    }
+    &[data-layer="3"] {
+      .category-title,
+      &::before {
+        left: -22px;
+        top: -48px;
+      }
+    }
+    &[data-layer="4"] {
+      .category-title {
+        margin: 50px 0;
+      }
+      &::before {
+        display: none;
+      }
+    }
+  }
+  .category-content {
+    height: 100%;
+  }
+}
