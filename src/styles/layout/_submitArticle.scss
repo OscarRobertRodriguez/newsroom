@@ -23,7 +23,7 @@
     box-sizing: border-box;
     &:focus {
       outline: 0;
-      box-shadow: 0 0 5px 1px rgba(100, 100, 100, .10);
+      box-shadow: 0 0 5px 1px rgba(100, 100, 100, .1);
       transition: box-shadow .3s ease-in-out;
     }
   }
@@ -62,7 +62,7 @@
       -webkit-appearance: none;
       -moz-appearance: none;
       margin-top: 6px;
-      background: transparent;
+      background-color: transparent;
     }
     &-select {
       height: 30px;
@@ -88,7 +88,7 @@
     }
   }
   &--button {
-    margin: 30px auto!important;
-    display: block!important;
+    margin: 30px auto !important;
+    display: block !important;
   }
 }
