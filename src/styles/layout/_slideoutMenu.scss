@@ -71,16 +71,23 @@
          content: "";
          display: block;
          position: absolute;
-         margin-left: 1rem;
          padding: 0.8rem;
          right: 0;
          top: 0;
-         width: 17px;
-         height: 17px;
-         border: 1px solid black;
-         background: url(../assets/images/icons/ic_launch.png) no-repeat;
+         width: 15px;
+         height: 15px;
+         background: red;
+         background: url(../assets/images/icons/ic-launch.png) 17px 17px no-repeat ;
          opacity: 0.15;
+         cursor: pointer;
+         transition: 0.5s ease;
        }
+
+       &:hover::after {
+         opacity: 0.4;
+       }
+
+
     }
 
     &--whatshot {
