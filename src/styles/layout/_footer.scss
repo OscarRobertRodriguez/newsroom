@@ -1,10 +1,13 @@
-.footer-container {
+.site-footer {
   background: #3A3A3C;
+  height: 400px;
+}
+
+.footer-container {
   color: $white;
-  min-height: 400px;
   width: 100%;
-  border: 1px solid white;
   display: flex;
+  justify-content: center;
   flex-direction: column;
 
   a {
@@ -74,7 +77,7 @@
         width: 320px;
         
         .left-zero {
-          left: 0em;
+          left: 0;
         } 
 
         .left-half {
@@ -97,7 +100,7 @@
           visibility: hidden;
         }
 
-        .transistion-zero {
+        .transition-zero {
           transition-delay: 0s, 0s;
         }
 
@@ -196,7 +199,7 @@
         }
 
         button:focus {
-          outline:0;
+          outline: 0;
         }
 
         // input 2 of 4

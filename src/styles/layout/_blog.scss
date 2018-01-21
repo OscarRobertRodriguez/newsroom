@@ -60,41 +60,45 @@
         pointer-events: all;
         display: inline-block;
       }
+      .category-title--right {
+        position: absolute;
+        vertical-align: middle;
+        right: 70px;
+        top: 0;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        float: right;
+        text-align: right;
+        display: inline-block;
+        color: #999;
+        .category-current-date {
+          display: block;
+          font-size: 3rem;
+          letter-spacing: 1.9px;
+          margin: 0;
+          &--narrow {
+            font-weight: 200;
+          }
+          &--bold {
+            font-weight: 700;
+          }
+        }
+        .category-sort {
+          font-size: 36px;
+          margin-top: 24px;
+          display: inline-block;
+          padding-right: 26px;
+          &--selected {
+            color: $red;
+          }
+          &:last-child {
+            padding-right: 0;
+          }
+        }
+      }
     }
     .category-title--right {
-      position: relative;
-      vertical-align: middle;
-      margin-top: 50px;
-      margin-right: 260px;
-      margin-bottom: 50px;
-      float: right;
-      text-align: right;
-      display: inline-block;
-      color: #999;
-      .category-current-date {
-        display: block;
-        font-size: 45px;
-        letter-spacing: 1.9px;
-        margin: 0;
-        &--narrow {
-          font-weight: 200;
-        }
-        &--bold {
-          font-weight: 700;
-        }
-      }
-      .category-sort {
-        font-size: 36px;
-        margin-top: 24px;
-        display: inline-block;
-        padding-right: 26px;
-        &--selected {
-          color: $red;
-        }
-        &:last-child {
-          padding-right: 0;
-        }
-      }
+      display: none;
     }
     &[data-layer="0"] {
       z-index: 1000;
@@ -119,4 +123,12 @@
       transition: opacity .3s 0s ease-in-out;
     }
   }
+  .category-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 3em;
+  }
 }
+
