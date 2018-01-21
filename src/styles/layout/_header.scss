@@ -78,7 +78,11 @@
 
 .header-icons {
   display: flex;
-  flex-direction: column;
+  flex-direction: column;  
+}
+
+.header-icons .search-icon {
+  margin-bottom: 10px;
 }
 
 .settings-icon,
