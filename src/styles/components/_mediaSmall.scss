@@ -1,8 +1,10 @@
 .media-small {
-  border:1px solid black;
+  border: 1px solid black;
   display: flex;
   // align-items: center;
-  width:100%;
+  // margin:0 auto;
+  margin-left: 60px;
+  width: 72%;
 }
 
 .media-small-bottom {
@@ -14,7 +16,7 @@
 
 
 .media-small-bottom-item:first-child {
-  margin-right:10px;
+  margin-right: 10px;
 }
 
 .media-small-bottom-item:last-child {
@@ -30,11 +32,9 @@
 
 .media-small-bottom-item:nth-child(3),
 .media-small-bottom-item:nth-child(4) {
-  margin-right:30px;
+  margin-right: 50px;
   display: flex;
-  align-items: top;
-
-  
+  align-items: top; 
 }
 
 .media-small-top {
@@ -49,32 +49,34 @@
 }
 
 .media-small-top-item:first-child {
-  width:95%;
+  // width:95%;
 }
 
 .media-small-top-item:last-child > * {
-  padding-right:10px;
-  padding-left:10px;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 .media-small-content {
-  margin-top:0;
+  width: 95%;
+  margin-top: 0;
 }
 
 .media-small-img-container {
   border: 1px solid black;
-  height:250px;
-  width:350px;
+  height: 250px;
+  width: 350px;
 }
 
 .media-content-right {
-  padding:15px;
+  padding: 15px;
+  width: 80%;
 }
 
 .content-tag {
   background-color: $lightGray;
   border-radius: 5px;
   font-size: 80%;
-  padding:7px;
+  padding: 7px;
   text-decoration: none;
 }
 
@@ -88,27 +90,23 @@
 }
 
 .chat-bubble, .more,.eye, .open_new, .filter_none {
-  color:$gray;
+  color: $gray;
 }
 
-.filter_none {
-  // color:$gray;
-  transform: rotate(90deg) translateY(30px);
-  transform-origin: 100% 30%;
-}
 
 .more {
-  padding-top:5px;
-  font-size:70%;
+  padding-top: 5px;
+  font-size: 70%;
 }
 
 .number {
   color: $red;
   font-weight: 600;
-  padding-top:3px;
-  padding-left:3px;
+  padding-top: 3px;
+  padding-left: 3px;
 }
 
 .three-d {
-  color:$red;
+  color: $red;
 }
+
