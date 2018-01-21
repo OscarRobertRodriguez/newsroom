@@ -6,4 +6,5 @@ import '../assets/images/code.jpg';
 
 
 import './scripts/examples/examples';
+import './scripts/dateObject';
 
