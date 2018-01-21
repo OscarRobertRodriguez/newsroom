@@ -1,10 +1,15 @@
-.footer-container {
+.site-footer {
   background: #3A3A3C;
+  height: 400px;
+}
+
+.footer-container {
+  max-width: 1480px;
+  padding-left: 66px;
+  padding-right: 66px;
   color: $white;
-  min-height: 400px;
-  width: 100%;
-  border: 1px solid white;
   display: flex;
+  justify-content: center;
   flex-direction: column;
 
   a {
@@ -13,7 +18,7 @@
   }
 
   .footer-home {
-    margin: 100px 0 0 150px;
+    margin: 100px 0 0 0;
 
     a {
       font-size: 50px;
@@ -22,7 +27,7 @@
 
   .footer-links-row {
     display: flex;
-    margin-left: 150px;
+    justify-content: space-between;
 
     .footer-links{
       font-size: 1.2em;
@@ -35,7 +40,8 @@
 
         li {
           display: inline;
-          padding: 10px 20px;
+          padding-top: 20px;
+          padding-right: 30px;
         }
 
         li .twitter {
@@ -74,7 +80,7 @@
         width: 320px;
         
         .left-zero {
-          left: 0em;
+          left: 0;
         } 
 
         .left-half {
@@ -97,7 +103,7 @@
           visibility: hidden;
         }
 
-        .transistion-zero {
+        .transition-zero {
           transition-delay: 0s, 0s;
         }
 
@@ -196,7 +202,7 @@
         }
 
         button:focus {
-          outline:0;
+          outline: 0;
         }
 
         // input 2 of 4

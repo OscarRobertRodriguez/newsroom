@@ -1,6 +1,7 @@
 .site-header {
   color: $mediumBlack;
   font-family: $fontType;
+  border-bottom: 3px solid RGBA(233, 233, 233, 1);
 }
 
 .main-nav {
@@ -50,8 +51,8 @@
   align-items: flex-end;
   margin-left: 20px;
   margin-right: 60px;
-}
 
+}
 
 .header-wrapper-item:first-child {
   // padding:10px;
@@ -77,7 +78,11 @@
 
 .header-icons {
   display: flex;
-  flex-direction: column;
+  flex-direction: column;  
+}
+
+.header-icons .search-icon {
+  margin-bottom: 10px;
 }
 
 .settings-icon,
@@ -94,6 +99,7 @@
 .profile-img-container {
   height: 50px;
   width: 50px;
+  margin-bottom: 10px;
 }
 
 .profile-name {

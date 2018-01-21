@@ -1,60 +1,65 @@
 .media-object-twitter {
   display: inline-grid;
   grid-template-columns: 1fr 3fr;
-  max-width: 45%;
-  margin: 30px 10px;
+  max-width: 35%;
+  margin: 30px 50px;
 
   .tw-user {
     padding: 20px;
     display: grid;
     grid-template-columns: 1fr 2fr;
     justify-content: center;
-    
-    &-img {
-      max-width: 75px;
+
+    &-img-contain {
+      width: 50px;
+      height: 50px;
+      overflow: hidden;
+      background-image: url('/assets/images/meTest.jpg');
+      background-size: cover;
     }
 
     &-details {
       display: flex;
       flex-direction: column;
-      justify-content: center;
       padding: 0 10px;
+      padding-left: 0;
     }
 
     &-name {
       font-weight: bold;
       padding-bottom: 5px;
+      padding-left: 5px;
+      white-space: nowrap;
     }
     
     &-handle {
-      color: $lightGray;
+      color: $medGray;
+      font-size: 0.85rem;
     }
   }
 
   .tw-follow {
-    padding: 20px;
+    padding: 15px 20px;
     justify-self: end;
-    align-self: center;
 
     a {
       text-decoration: none;
     }
     
-    &-btn {
-      border: 1px solid $red;
-      color: $red;
-      padding: 5px 10px;
-      font-weight: bold;
-    }
+    .twitterFollowBtn {
+        width: 20px;
+     }
   }
 
   .tw-message {
     padding: 0 20px;
     grid-column: span 2;
+    padding-left: 0;
+    font-weight: bold;
   }
 
   .tw-posted-on {
-    color: $lightGray;
+    color: $medGray;
     padding: 15px 20px 10px;
     font-weight: bold;
     font-size: 0.85rem;
@@ -73,10 +78,16 @@
   .tw-action {
     padding: 10px 20px 10px 0;
     grid-column: span 2;
+    font-size: 1.2rem;
 
-    & > span{
+    & > span {
       padding: 0 20px;
       color: $medGray;
+
+      span {
+        color: $red;
+        font-weight: bold;
+      }
     }
   }
 }
