@@ -4,8 +4,10 @@
 }
 
 .footer-container {
+  max-width: 1480px;
+  padding-left: 66px;
+  padding-right: 66px;
   color: $white;
-  width: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -16,7 +18,7 @@
   }
 
   .footer-home {
-    margin: 100px 0 0 150px;
+    margin: 100px 0 0 0;
 
     a {
       font-size: 50px;
@@ -25,7 +27,7 @@
 
   .footer-links-row {
     display: flex;
-    margin-left: 150px;
+    justify-content: space-between;
 
     .footer-links{
       font-size: 1.2em;
@@ -38,7 +40,8 @@
 
         li {
           display: inline;
-          padding: 10px 20px;
+          padding-top: 20px;
+          padding-right: 30px;
         }
 
         li .twitter {
