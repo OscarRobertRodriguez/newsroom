@@ -23,7 +23,7 @@
     box-sizing: border-box;
     &:focus {
       outline: 0;
-      box-shadow: 0 0 5px 1px rgba(100, 100, 100, .10);
+      box-shadow: 0 0 5px 1px rgba(100, 100, 100, .1);
       transition: box-shadow .3s ease-in-out;
     }
   }
@@ -62,7 +62,7 @@
       -webkit-appearance: none;
       -moz-appearance: none;
       margin-top: 6px;
-      background: transparent;
+      background-color: transparent;
     }
     &-select {
       height: 30px;
@@ -87,37 +87,8 @@
       width: 35%;
     }
   }
-  &__submit {
-    margin: 30px auto;
-    display: block;
-    border: 2px solid $red;
-    border-radius: 4px;
-    background-color: $red;
-    color: $white;
-    padding: 11px 0;
-    width: 200px;
-    font-weight: 600;
-    font-size: 16px;
-    &:hover {
-      cursor: pointer;
-      outline: 0;
-      box-shadow: 0 0 5px 1px rgba(0, 0, 0, .2);
-      transition: background-color 500ms ease;
-      background-color: darken($red,2%);
-    }
-    &:active {
-      transition: background-color 100ms ease-in-out;
-      background-color: darken($red,10%);
-    }
-    &:focus {
-      outline: 0;
-    }
-    &-icon {
-      padding-right: 7px;
-      position: relative;
-      top: 1px;
-      font-size: 18px;
-      pointer-events: none;
-    }
+  &--button {
+    margin: 30px auto !important;
+    display: block !important;
   }
 }
