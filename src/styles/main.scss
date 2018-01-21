@@ -1,6 +1,7 @@
 @import 'base/colors';
 @import 'base/typography';
 @import 'base/_helperClasses';
+@import '~material-design-icons/iconfont/material-icons.css';
 
 // layout
 @import 'layout/layout';
@@ -8,5 +9,6 @@
 @import 'layout/submitArticle';
 @import 'layout/topNews';
 @import 'layout/footer';
+@import 'layout/buttons';
 
 @import 'components/settingsModal';
