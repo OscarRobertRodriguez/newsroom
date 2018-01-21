@@ -3,4 +3,6 @@ import 'normalize.css';
 import '../styles/main.scss';
 import '../assets/images/meTest.jpg';
 
-import './scripts/examples/examples';
+// JS components
+// import './scripts/examples/examples';
+import './scripts/components/categorySwitcher';

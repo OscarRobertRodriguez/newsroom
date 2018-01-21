@@ -3,11 +3,10 @@
   padding-top: 144px;
   padding-left: 66px;
   box-sizing: border-box;
-  * {box-sizing: inherit;}
+  * { box-sizing: inherit; }
   .category {
     position: absolute;
-    top: 144px;
-    cursor: pointer;
+    transition: top .2s 0s ease-in-out, left .2s 0s ease-in-out;
     .category-title {
       font-size: 1rem;
       position: relative;
@@ -16,64 +15,50 @@
       line-height: 48px;
       color: $lightGray;
       font-weight: 100;
+      width: 300px;
+      height: 300px;
+      border-left: 1px solid $lightGray;
+      border-top: 1px solid $lightGray;
+      cursor: pointer;
+      transition: font .2s 0s ease-in-out;
+    }
+    .category-content {
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity .2s 0s ease-in-out;
+      min-height: 400px; // TEMP VALUE
     }
     &.category-active {
-      min-height: 400px; // TEMP VALUE
       margin-bottom: 40px;
       position: relative;
-      top: 0;
-      left: 0;
       border-left: 1px solid $red;
       border-top: 1px solid $red;
       background-color: $white;
-      cursor: auto;
+      z-index: 4000;
       .category-title {
         font-size: 55px;
         font-weight: 600;
         color: $red;
         padding-left: 45px;
+        margin: 50px 0;
+        width: unset;
+        height: unset;
+        border-color: transparent;
+        cursor: auto;
+      }
+      .category-content {
+        opacity: 1;
+        pointer-events: all;
       }
     }
-    &::before {
-      content: '';
-      display: block;
-      position: absolute;
-      width: 300px;
-      height: 300px;
-      border-left: 1px solid $lightGray;
-      border-top: 1px solid $lightGray;
+    &[data-layer="0"]  {
+      z-index: 1000;
     }
     &[data-layer="1"] {
-      .category-title,
-      &::before {
-        left: -66px;
-        top: -144px;
-      }
+      z-index: 2000;
     }
     &[data-layer="2"] {
-      .category-title,
-      &::before {
-        left: -44px;
-        top: -96px;
-      }
+      z-index: 3000;
     }
-    &[data-layer="3"] {
-      .category-title,
-      &::before {
-        left: -22px;
-        top: -48px;
-      }
-    }
-    &[data-layer="4"] {
-      .category-title {
-        margin: 50px 0;
-      }
-      &::before {
-        display: none;
-      }
-    }
-  }
-  .category-content {
-    //height: 100%;
   }
 }
