@@ -17,9 +17,9 @@ body {
 
 .page-wrapper {
   display: flex;
- flex-direction: column;
- width:100%;
- align-items: center;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
 }
 
 .top-news, 
@@ -29,9 +29,6 @@ body {
   width: 100%;
   max-width: 1480px;
 }
-
-
-
 
 .site-footer,.site-header  {
   width: 100%;
@@ -44,17 +41,16 @@ body {
   background: orange;
 }
 
-
 .section-wrapper {
   width: 100%; 
-  max-width:1480px;
+  max-width: 1480px;
 }
 
 // shouldn't go here but i'll leave for now should be in on component called twiter
 .twitter-news {
- padding: 20px;
+  padding: 20px;
 
-  .twitter-topic-heading{
+  .twitter-topic-heading {
     margin: 75px 0 0;
   }
 

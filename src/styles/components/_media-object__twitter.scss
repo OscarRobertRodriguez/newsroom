@@ -10,7 +10,7 @@
     grid-template-columns: 1fr 2fr;
     justify-content: center;
 
-    &-img-contain{
+    &-img-contain {
       width: 50px;
       height: 50px;
       overflow: hidden;
@@ -46,7 +46,7 @@
       text-decoration: none;
     }
     
-    .twitterFollowBtn{
+    .twitterFollowBtn {
         width: 20px;
      }
   }
@@ -80,11 +80,11 @@
     grid-column: span 2;
     font-size: 1.2rem;
 
-    & > span{
+    & > span {
       padding: 0 20px;
       color: $medGray;
 
-      span{
+      span {
         color: $red;
         font-weight: bold;
       }
