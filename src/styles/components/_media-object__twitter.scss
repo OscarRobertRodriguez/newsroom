@@ -21,44 +21,42 @@
     &-details {
       display: flex;
       flex-direction: column;
-      justify-content: center;
       padding: 0 10px;
     }
 
     &-name {
       font-weight: bold;
       padding-bottom: 5px;
+      white-space: nowrap;
     }
     
     &-handle {
-      color: $lightGray;
+      color: $medGray;
+      font-size: 0.85rem;
     }
   }
 
   .tw-follow {
-    padding: 20px;
+    padding: 15px 20px;
     justify-self: end;
-    align-self: center;
 
     a {
       text-decoration: none;
     }
     
-    &-btn {
-      border: 1px solid $red;
-      color: $red;
-      padding: 5px 10px;
-      font-weight: bold;
-    }
+    .twitterFollowBtn{
+        width: 20px;
+     }
   }
 
   .tw-message {
     padding: 0 20px;
     grid-column: span 2;
+    font-weight: bold;
   }
 
   .tw-posted-on {
-    color: $lightGray;
+    color: $medGray;
     padding: 15px 20px 10px;
     font-weight: bold;
     font-size: 0.85rem;
@@ -77,6 +75,7 @@
   .tw-action {
     padding: 10px 20px 10px 0;
     grid-column: span 2;
+    font-size: 1.2rem;
 
     & > span{
       padding: 0 20px;
@@ -84,6 +83,7 @@
 
       span{
         color: $red;
+        font-weight: bold;
       }
     }
   }
