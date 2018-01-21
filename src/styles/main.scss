@@ -1,11 +1,15 @@
 @import 'base/colors';
 @import 'base/typography';
+@import 'base/_helperClasses';
+@import '~material-design-icons/iconfont/material-icons.css';
 
 // layout
 @import 'layout/layout';
 @import 'layout/header';
+@import 'layout/submitArticle';
 @import 'layout/topNews';
 @import 'layout/slideoutMenu';
 @import 'layout/footer';
+@import 'layout/blog';
 
 @import 'components/settingsModal';
