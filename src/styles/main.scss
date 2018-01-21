@@ -1,9 +1,15 @@
 @import 'base/colors';
 @import 'base/typography';
-@import 'layout/layout';
+@import 'base/_helperClasses';
+@import '~material-design-icons/iconfont/material-icons.css';
 
-// components
+// layout
+@import 'layout/layout';
 @import 'layout/header';
-@import 'components/topNews'; 
-@import 'components/footer';
 @import 'components/media-object__twitter';
+@import 'layout/submitArticle';
+@import 'layout/topNews';
+@import 'layout/footer';
+@import 'layout/blog';
+
+@import 'components/settingsModal';
