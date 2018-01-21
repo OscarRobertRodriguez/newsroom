@@ -8,14 +8,14 @@
   height: 42px;
   text-align: center;
   white-space: nowrap;
-  padding: 0px 15px 3px 15px;
+  padding: 0 15px 3px 15px;
   background-color: $white;
   transition: all 200ms ease-out;
   &:hover {
-    background-color: darken($white,5%);
+    background-color: darken($white, 5%);
   }
   &:active {
-    background-color: darken($white,9%);
+    background-color: darken($white, 9%);
   }
   &:focus {
     outline: 0;
@@ -33,12 +33,12 @@
     color: $white;
     background-color: $red;
     &:hover {
-      background-color: darken($red,10%);
-      border-color: darken($red,10%);
+      background-color: darken($red, 10%);
+      border-color: darken($red, 10%);
     }
     &:active {
-      background-color: darken($red,20%);
-      border-color: darken($red,30%);
+      background-color: darken($red, 20%);
+      border-color: darken($red, 30%);
     }
   }
   /*Outline Theme*/
@@ -50,8 +50,8 @@
       background-color: inherit;
     }
     &:active {
-      background-color: darken($white,7%);
-      border-color: darken($red,30%);
+      background-color: darken($white, 7%);
+      border-color: darken($red, 30%);
     }
   }
   /*Small Setup*/
@@ -66,7 +66,7 @@
       pointer-events: none;
     }
     &.button--icon-only {
-      padding: 0px 8px;
+      padding: 0 8px;
     }
   }
   /*Icon Only Setup*/
@@ -86,8 +86,8 @@
     font-weight: 200;
     padding: 0 8px;
     &:hover {
-      background-color: darken(#F2F2F2,7%);
-      color: darken(#A4A4A4,12%);
+      background-color: darken(#F2F2F2, 7%);
+      color: darken(#A4A4A4, 12%);
       cursor: pointer;
     }
   }
@@ -95,17 +95,17 @@
   &--disabled {
     background-color: $lightGray;
     border: 2px solid $lightGray;
-    color: darken($white,3%);
+    color: darken($white, 3%);
     &:hover {
       cursor: no-drop;
       background-color: $lightGray;
       border: 2px solid $lightGray;
-      color: darken($white,3%);
+      color: darken($white, 3%);
     }
     &:active {
       background-color: $lightGray;
       border: 2px solid $lightGray;
-      color: darken($white,3%);
+      color: darken($white, 3%);
     }
   }
 }
