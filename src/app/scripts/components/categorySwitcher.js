@@ -3,20 +3,25 @@ let selectedLayerNo;
 
 layers.forEach(layer => {
     setLayerPosition(layer);
-    layer.addEventListener('click', activateCategory);
+    layer.addEventListener('click', switchCategories);
 });
 
-function activateCategory() {
+function switchCategories() {
     const selectedLayer = this.parentElement;
     selectedLayer.addEventListener('transitionend', activateLayer);
     selectedLayerNo = Number(selectedLayer.dataset.layer);
     if (selectedLayerNo === 3) return;
+    const diff = 3 - selectedLayerNo;
+
     const activeLayer = document.querySelector('[data-layer="3"]');
     activeLayer.addEventListener('transitionend', deactivateLayer);
-    const diff = 3 - selectedLayerNo;
+
+    activeLayer.classList.remove('category-active');
+    selectedLayer.classList.add('category-active');
 
     activeLayer.style.left = `-${diff * 22}px`;
     activeLayer.style.top = `-${diff * 48}px`;
+
     const left = Number(selectedLayer.style.left.split('px')[0]);
     const top = Number(selectedLayer.style.top.split('px')[0]);
     selectedLayer.style.left = `${left + diff * 22}px`;
@@ -24,22 +29,30 @@ function activateCategory() {
 }
 
 function deactivateLayer() {
+    this.style.transition = 'none';
     this.removeEventListener('transitionend', deactivateLayer);
-    this.classList.remove('category-active');
+
     this.dataset.layer = selectedLayerNo;
     this.style.left = `${selectedLayerNo * 22}px`;
     this.style.top = `${selectedLayerNo * 48}px`;
+
+    setTimeout(() => {
+        this.style.transition = 'top .4s .1s ease-in-out, left .4s .1s ease-in-out';
+    });
 }
 
 function activateLayer() {
+    this.style.transition = 'none';
     this.removeEventListener('transitionend', activateLayer);
-    const selectedLayer = this;
     if (selectedLayerNo === 3) return;
 
-    selectedLayer.classList.add('category-active');
-    selectedLayer.dataset.layer = '3';
-    selectedLayer.style.left = '0px';
-    selectedLayer.style.top = '0px';
+    this.dataset.layer = '3';
+    this.style.left = '0px';
+    this.style.top = '0px';
+
+    setTimeout(() => {
+        this.style.transition = 'top .4s .1s ease-in-out, left .4s .1s ease-in-out';
+    });
 }
 
 function setLayerPosition(layer) {
