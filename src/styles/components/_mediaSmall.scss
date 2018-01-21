@@ -1,6 +1,6 @@
 .media-small {
-  display: flex;
-  width: 95%;
+  display: flex; 
+  width: 98%;
 }
 
 .media-small-bottom {
@@ -56,6 +56,10 @@
 
 .media-content-right {
   padding: 15px;
+  // padding-top:15px;
+  // padding-bottom: 15px;
+  // padding-right: 0;
+  // padding-left: 0;
   width: 80%;
 }
 
