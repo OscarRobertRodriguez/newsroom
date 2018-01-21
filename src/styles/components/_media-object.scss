@@ -67,7 +67,10 @@
 }
 
 .media-object__technologies li {
-  padding: 3px 8px;
+  padding: 4px 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: HSL(0, 0%, 95%);
   font-size: .8rem;
   margin-top: 18px;
