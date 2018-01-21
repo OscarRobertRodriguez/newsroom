@@ -45,8 +45,9 @@
   &--outline {
     background-color: $white;
     color: $red;
+    border: 1px solid $red;
     &:hover {
-      border-color: $red;
+      border-color: darken($red, 15%);
       background-color: inherit;
     }
     &:active {

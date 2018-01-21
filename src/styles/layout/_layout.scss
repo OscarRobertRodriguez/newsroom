@@ -40,6 +40,9 @@ body {
   align-items: center;
 }
 
+.top-news {
+  background: orange;
+}
 
 
 .section-wrapper {
@@ -50,6 +53,10 @@ body {
 // shouldn't go here but i'll leave for now should be in on component called twiter
 .twitter-news {
  padding: 20px;
+
+  .twitter-topic-heading{
+    margin: 75px 0 0;
+  }
 
   .twitterLogo {
     width: 60px;

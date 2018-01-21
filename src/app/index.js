@@ -4,8 +4,9 @@ import '../styles/main.scss';
 import '../assets/images/meTest.jpg';
 import '../assets/images/code.jpg';
 
-
-import './scripts/examples/examples';
+// JS components
+// import './scripts/examples/examples';
+import './scripts/examples/toggleModals'; // TEMPORARY
+import './scripts/categorySwitcher';
 import './scripts/dateObject';
-
-import mediaOjectTwitter from './scripts/mediaObjectTwitter'
+import './scripts/mediaObjectTwitter';

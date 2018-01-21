@@ -4,7 +4,6 @@
 // make note that you need to use relative paths here, path starts with './'
 import testLogger from './testLog';
 import testLogger2 from './testLog2';
-import './toggleModals';
 
 console.log('::::::::::: use properties :::::::::::');
 console.log(testLogger.property);
