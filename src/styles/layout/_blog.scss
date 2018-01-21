@@ -38,16 +38,16 @@
       }
     }
     .category-title--right {
-      position: relative;
+      position: absolute;
       vertical-align: middle;
-      left: 260px;
+      right: 70px;
       margin-top: 50px;
       text-align: right;
       display: inline-block;
       color: #999;
       .category-current-date {
         display: block;
-        font-size: 45px;
+        font-size: 3rem;
         letter-spacing: 1.9px;
         margin: 0;
         &--narrow {
@@ -111,5 +111,10 @@
   }
   .category-content {
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 3em;
   }
 }
+

@@ -1,9 +1,6 @@
 .media-small {
-  border: 1px solid black;
-  display: flex; // align-items: center;
-  // margin:0 auto;
-  margin-left: 60px;
-  width: 72%;
+  display: flex; 
+  width: 95%;
 }
 
 .media-small-bottom {
@@ -42,9 +39,7 @@
   flex-direction: row; // flex-direction: column;
 }
 
-.media-small-top-item:first-child {
-  // width:95%;
-}
+
 
 .media-small-top-item:last-child>* {
   padding-right: 10px;

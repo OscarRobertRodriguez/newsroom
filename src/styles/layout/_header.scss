@@ -1,6 +1,7 @@
 .site-header {
   color: $mediumBlack;
   font-family: $fontType;
+  border-bottom: 3px solid RGBA(233, 233, 233, 1);
 }
 
 .main-nav {
@@ -50,6 +51,7 @@
   align-items: flex-end;
   margin-left: 20px;
   margin-right: 60px;
+
 }
 
 

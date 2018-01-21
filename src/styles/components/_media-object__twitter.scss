@@ -9,6 +9,7 @@
     display: grid;
     grid-template-columns: 1fr 2fr;
     justify-content: center;
+    padding-left: 0;
     
     &-img {
       max-width: 75px;
@@ -19,11 +20,13 @@
       flex-direction: column;
       justify-content: center;
       padding: 0 10px;
+      padding-left: 0;
     }
 
     &-name {
       font-weight: bold;
       padding-bottom: 5px;
+      padding-left: 5px;
     }
     
     &-handle {
@@ -51,6 +54,7 @@
   .tw-message {
     padding: 0 20px;
     grid-column: span 2;
+    padding-left: 0;
   }
 
   .tw-posted-on {

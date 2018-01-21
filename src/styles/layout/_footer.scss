@@ -1,10 +1,15 @@
-.footer-container {
+
+.site-footer {
   background: #3A3A3C;
+  height: 400px;
+}
+
+
+.footer-container {
   color: $white;
-  min-height: 400px;
   width: 100%;
-  border: 1px solid white;
   display: flex;
+  justify-content: center;
   flex-direction: column;
 
   a {
