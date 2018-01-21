@@ -5,14 +5,14 @@
 // layout
 @import 'layout/layout';
 @import 'layout/header';
-@import 'components/media-object__twitter';
 @import 'layout/submitArticle';
 @import 'layout/topNews';
 @import 'layout/footer';
 @import 'layout/buttons';
 @import 'layout/blog';
-//components 
+//components
 @import 'components/media-object';
+@import 'components/media-object__twitter';
 @import 'components/settingsModal';
 @import 'components/mediaSmall';
 @import 'components/sponsor';
