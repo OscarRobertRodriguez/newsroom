@@ -23,6 +23,7 @@ html {
      right: 0;
      color: $white;
      transition: all 0.5s ease;
+     z-index: 20;
 
        &:hover {
          background: $white;	
@@ -189,12 +190,21 @@ html {
 #slideout-menu-icon-whatshot:checked + label.slideout-menu__ic-whatshot,
 #slideout-menu-icon-whatshot:checked ~ label.slideout-menu__ic-bookmark,
 #slideout-menu-icon-whatshot:checked ~ label.slideout-menu__ic-notification {
-  right: 322px;
+  right: 329px;
+}
+
+#slideout-menu-icon-whatshot:checked + label.slideout-menu__ic-whatshot {
+  background: $white;
+  color: $blue;
+  border-right: 1px solid $white;
+  right: 320px;
+  width: 47px;
+
 }
 
 #slideout-menu-icon-whatshot:checked + label.slideout-menu__ic-whatshot + div,
 #slideout-menu-icon-bookmark:checked + label.slideout-menu__ic-bookmark + div,
 #slideout-menu-icon-notification:checked + label.slideout-menu__ic-notification + div {
   right: 0;
-  z-index: 10;
+  // z-index: 10;
 }
