@@ -3,7 +3,9 @@
   padding-top: 144px;
   padding-left: 66px;
   box-sizing: border-box;
-  * {box-sizing: inherit;}
+  * {
+    box-sizing: inherit;
+  }
   .category {
     position: absolute;
     top: 144px;
@@ -32,6 +34,40 @@
         font-weight: 600;
         color: $red;
         padding-left: 45px;
+        display: inline-block;
+      }
+    }
+    .category-title--right {
+      position: relative;
+      vertical-align: middle;
+      left: 260px;
+      margin-top: 50px;
+      text-align: right;
+      display: inline-block;
+      color: #999;
+      .category-current-date {
+        display: block;
+        font-size: 45px;
+        letter-spacing: 1.9px;
+        margin: 0;
+        &--narrow {
+          font-weight: 200;
+        }
+        &--bold {
+          font-weight: 700;
+        }
+      }
+      .category-sort {
+        font-size: 36px;
+        margin-top: 24px;
+        display: inline-block;
+        padding-right: 26px;
+        &--selected {
+          color: $red;
+        }
+        &:last-child {
+          padding-right: 0;
+        }
       }
     }
     &::before {
@@ -74,6 +110,6 @@
     }
   }
   .category-content {
-    //height: 100%;
+    height: 100%;
   }
 }
