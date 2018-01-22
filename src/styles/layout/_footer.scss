@@ -12,6 +12,18 @@
   justify-content: center;
   flex-direction: column;
 
+  .footer-logo {
+    margin-right: 10px;
+    padding-bottom: 20px;
+    width:70px;
+    height:70px;
+  }
+  
+  .logo-title-container {
+    display: flex;
+    align-items: center;
+  }
+
   a {
     color: white;
     text-decoration: none;
@@ -236,3 +248,5 @@
     }    
   }
 }
+
+
