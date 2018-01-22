@@ -7,7 +7,7 @@
     "build": "webpack",
     "dev": "webpack --progress && webpack-dev-server -d --hot  --watch",
     "production": "NODE_ENV=production webpack",
-    "deploy": "git branch -D gh-pages && git checkout -b gh-pages && npm run production && git subtree push --prefix dist origin gh-pages && git checkout dev"
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -29,6 +29,7 @@
     "css-loader": "^0.28.9",
     "extract-text-webpack-plugin": "^3.0.2",
     "file-loader": "^1.1.6",
+    "gh-pages": "^1.1.0",
     "html-webpack-plugin": "^2.30.1",
     "node-sass": "^4.7.2",
     "optimize-css-assets-webpack-plugin": "^3.2.0",
