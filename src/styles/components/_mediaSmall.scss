@@ -34,9 +34,8 @@
 }
 
 .media-small-top-item:last-child {
-  // border:1px solid red;
   display: flex;
-  flex-direction: row; // flex-direction: column;
+  flex-direction: row;
 }
 
 .media-small-top-item:last-child>* {
