@@ -3,11 +3,12 @@
   background: none;
   padding: 1em;
   margin-top: 1em;
+  margin-left: 5rem;
 }
 
 .top-news__article-wrapper {
   display: flex;
-  margin: 5em auto 1em auto;
+  margin: 3em 0 1em 4rem;
   justify-content: center;
   width: 80%;
 }
@@ -21,9 +22,10 @@
 }
 
 .top-news__article {
-  width: 270px;
+  width: 310px;
   color: #464648;
   padding: 0 2rem;
+  margin: 1rem;
 }
 
 .top-news__article-title {
