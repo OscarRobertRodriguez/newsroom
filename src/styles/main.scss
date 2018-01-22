@@ -2,16 +2,23 @@
 @import 'base/typography';
 @import 'base/_helperClasses';
 @import '~material-design-icons/iconfont/material-icons.css';
-
 // layout
 @import 'layout/layout';
 @import 'layout/header';
-@import 'components/media-object__twitter';
 @import 'layout/submitArticle';
 @import 'layout/topNews';
+
 @import 'layout/slideoutMenu';
+
+@import 'layout/developerVideos';
+
 @import 'layout/footer';
 @import 'layout/buttons';
 @import 'layout/blog';
-
+//components
+@import 'components/media-object';
+@import 'components/media-object__twitter';
 @import 'components/settingsModal';
+@import 'components/mediaSmall';
+@import 'components/sponsor';
+@import 'components/_dateSelector';
