@@ -6,6 +6,8 @@ import '../assets/images/code.jpg';
 import '../assets/images/logoBovAcademy.png';
 import '../assets/images/robot.jpg'; 
 
+import '../assets/images/dev_news@3x.png';
+
 // JS components
 // import './scripts/examples/examples';
 import './scripts/examples/toggleModals'; // TEMPORARY
