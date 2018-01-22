@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack",
-    "dev": "webpack --progress && webpack-dev-server -d --hot  --watch"
+    "dev": "webpack --progress && webpack-dev-server -d --hot  --watch",
+    "production": "NODE_ENV=production webpack",
+    "deply": "npm run production git push origin master && git branch -D gh-pages && git checkout -b gh-pages && git subtree push --prefix dist origin gh-pages && git checkout master"
   },
   "repository": {
     "type": "git",
