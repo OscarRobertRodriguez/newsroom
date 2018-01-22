@@ -25,9 +25,9 @@ html {
      transition: all 0.5s ease;
      z-index: 20;
 
-       &:hover {
-         background: $white;	
-       }
+       // &:hover {
+       //   background: $white;	
+       // }
     }
 
    &__ic-whatshot {
@@ -35,9 +35,9 @@ html {
      background: $blue;
      border-color: $blue;
 
-       &:hover {
-       	color: $blue;
-       }
+       // &:hover {
+       // 	color: $blue;
+       // }
     }
 
    &__ic-bookmark {
@@ -45,9 +45,9 @@ html {
      background: $green;
      border-color: $green;
 
-       &:hover {
-       	color: $green;
-       }
+       // &:hover {
+       // 	color: $green;
+       // }
     }   
 
    &__ic-notification {
@@ -55,9 +55,9 @@ html {
      background: $orange;
      border-color: $orange;
 
-       &:hover {
-       	color: $orange;
-       }
+       // &:hover {
+       //   color: $orange;
+       // }
    }
 
 
@@ -197,22 +197,29 @@ html {
 }
 
 #slideout-menu-icon-whatshot:checked + label.slideout-menu__ic-whatshot,
-#slideout-menu-icon-whatshot:checked ~ label.slideout-menu__ic-bookmark,
-#slideout-menu-icon-whatshot:checked ~ label.slideout-menu__ic-notification {
-  right: 329px;
-}
-
-#slideout-menu-icon-whatshot:checked + label.slideout-menu__ic-whatshot {
+#slideout-menu-icon-bookmark:checked + label.slideout-menu__ic-bookmark,
+#slideout-menu-icon-notification:checked + label.slideout-menu__ic-notification,
+#slideout-menu-icon-notification:checked + label.slideout-menu__ic-notification {
   background: $white;
-  color: $blue;
   border-right: 1px solid $white;
   right: 320px;
   width: 47px;
+}
+
+#slideout-menu-icon-whatshot:checked + label.slideout-menu__ic-whatshot {
+  color: $blue;
+}
+
+#slideout-menu-icon-bookmark:checked + label.slideout-menu__ic-bookmark {
+  color: $green;
+}
+
+#slideout-menu-icon-notification:checked + label.slideout-menu__ic-notification {
+  color: $orange;
 }
 
 #slideout-menu-icon-whatshot:checked + label.slideout-menu__ic-whatshot + div,
 #slideout-menu-icon-bookmark:checked + label.slideout-menu__ic-bookmark + div,
 #slideout-menu-icon-notification:checked + label.slideout-menu__ic-notification + div {
   right: 0;
-  // z-index: 10;
 }
