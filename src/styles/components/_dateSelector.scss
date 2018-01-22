@@ -1,0 +1,28 @@
+.date-chooser{
+  text-align: center;
+  margin: 20px 0;
+  font-size: 1.3rem;
+  
+  .back-icon{
+    color: $red;
+    cursor: pointer;
+    margin-right: 20px;
+  }
+  .date-adverb{
+    color: $medGray;
+    &::after{
+      content: ':';
+    }
+  }
+  .dayOfWeek{
+    color: $medGray;
+    &::after{
+      content: ',';
+    }
+    
+  }
+  .date{
+    color: $medGray;
+    font-weight: bold;
+  }
+}
