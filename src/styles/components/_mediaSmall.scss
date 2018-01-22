@@ -1,9 +1,7 @@
 .media-small {
-  border: 1px solid black;
-  display: flex; // align-items: center;
-  // margin:0 auto;
-  margin-left: 60px;
-  width: 72%;
+  display: flex; 
+  width: 98%;
+  padding: 3em 0;
 }
 
 .media-small-bottom {
@@ -29,7 +27,7 @@
 .media-small-bottom-item:nth-child(4) {
   margin-right: 50px;
   display: flex;
-  align-items: top;
+  align-items: flex-start;
 }
 
 .media-small-top {
@@ -37,13 +35,8 @@
 }
 
 .media-small-top-item:last-child {
-  // border:1px solid red;
   display: flex;
-  flex-direction: row; // flex-direction: column;
-}
-
-.media-small-top-item:first-child {
-  // width:95%;
+  flex-direction: row;
 }
 
 .media-small-top-item:last-child>* {
@@ -60,10 +53,17 @@
   border: 1px solid black;
   height: 250px;
   width: 350px;
+  background: url('../assets/images/robot.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .media-content-right {
   padding: 15px;
+  // padding-top:15px;
+  // padding-bottom: 15px;
+  // padding-right: 0;
+  // padding-left: 0;
   width: 80%;
 }
 

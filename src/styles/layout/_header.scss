@@ -1,6 +1,8 @@
 .site-header {
   color: $mediumBlack;
   font-family: $fontType;
+  border-bottom: 3px solid RGBA(233, 233, 233, 1);
+  border-top: 10px solid $red;
 }
 
 .main-nav {
@@ -45,13 +47,13 @@
 }
 
 .header-wrapper  {
-  // margin-top:10px;
   display: flex;
   align-items: flex-end;
   margin-left: 20px;
   margin-right: 60px;
-}
+  padding-top:20px;
 
+}
 
 .header-wrapper-item:first-child {
   // padding:10px;
@@ -77,12 +79,17 @@
 
 .header-icons {
   display: flex;
-  flex-direction: column;
+  flex-direction: column;  
+}
+
+.header-icons .search-icon {
+  margin-bottom: 20px;
 }
 
 .settings-icon,
 .search-icon {
   font-size: 22px;
+  margin-bottom:10px;
 }
 
 .profile-img  {
@@ -94,9 +101,18 @@
 .profile-img-container {
   height: 50px;
   width: 50px;
+  margin-bottom: 10px;
 }
 
 .profile-name {
   font-weight: 600;
   font-size: 70%;
+}
+
+.header-logo {
+  padding-left:10px;
+  margin-right:5px;
+  width:70px;
+  height:70px;
+  font-size: 90%;
 }
