@@ -47,11 +47,14 @@ body {
 }
 
 .twitter-news {
-  padding: 20px;
-
-  .twitter-topic-heading {
-    margin: 75px 0 0;
-  }
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+    &>h1, &>h2{
+      grid-template-columns: 1fr;
+      grid-column: 1 / -1;
+      margin-bottom: 30px;
+    }
+  grid-column-gap: 20px;  
 
   .twitterLogo {
     width: 60px;
