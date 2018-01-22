@@ -7,7 +7,7 @@
     "build": "webpack",
     "dev": "webpack --progress && webpack-dev-server -d --hot  --watch",
     "production": "NODE_ENV=production webpack",
-    "deploy": "git branch -D gh-pages && git checkout -b gh-pages && npm run production && git subtree push --prefix dist origin gh-pages && git checkout dev"
+    "deploy": "npm run production && git commit --all -m 'deploy gh-pages' && git push origin deploy && git branch -D gh-pages && git checkout -b gh-pages && git pull origin deploy && git subtree push --prefix dist origin gh-pages && git checkout deploy"
   },
   "repository": {
     "type": "git",
