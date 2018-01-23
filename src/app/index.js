@@ -12,3 +12,4 @@ import './scripts/examples/toggleModals'; // TEMPORARY
 import './scripts/categorySwitcher';
 import './scripts/dateObject';
 import './scripts/mediaObjectTwitter';
+import './scripts/scrollspy';
