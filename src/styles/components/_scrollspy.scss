@@ -1,8 +1,26 @@
-.scrollspy {
+$scrollspyThickness: 10px;
+
+.scrollspy-track {
   position: fixed;
-  height: 10px;
-  background-color: $red;
-  width: 0;
+  width: 100%;
   left: 0;
+  height: $scrollspyThickness;
   z-index: 10000;
+  background-color: rgba(0, 0, 0, 0.1);
+  .scrollspy-bar {
+    position: relative;
+    height: $scrollspyThickness;
+    background-color: $red;
+    width: 0;
+    box-shadow: 0 1px 5px -1px $gray;
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      box-sizing: border-box;
+      border: $scrollspyThickness / 2 solid transparent;
+      border-left-color: $red;
+      right: -$scrollspyThickness;
+    }
+  }
 }
