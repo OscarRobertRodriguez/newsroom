@@ -1,6 +1,7 @@
 .media-small {
   display: flex; 
   width: 98%;
+  padding: 3em 0;
 }
 
 .media-small-bottom {
@@ -52,6 +53,9 @@
   border: 1px solid black;
   height: 250px;
   width: 350px;
+  background: url('../assets/images/robot.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .media-content-right {
