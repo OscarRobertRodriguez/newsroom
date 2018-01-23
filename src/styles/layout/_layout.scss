@@ -27,7 +27,7 @@ body {
 .developer-videos {
   flex: 1 0 auto;
   width: 100%;
-  max-width: 1280px;
+  max-width: 1480px;
 }
 
 .site-footer,.site-header  {
@@ -47,11 +47,14 @@ body {
 }
 
 .twitter-news {
-  padding: 20px;
-
-  .twitter-topic-heading {
-    margin: 75px 0 0;
-  }
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+    &>h1, &>h2{
+      grid-template-columns: 1fr;
+      grid-column: 1 / -1;
+      margin-bottom: 30px;
+    }
+  grid-column-gap: 20px;  
 
   .twitterLogo {
     width: 60px;
