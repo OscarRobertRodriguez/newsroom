@@ -7,174 +7,174 @@
   right: 0;
   z-index: 5000;
 
-   &__ic-whatshot,
-   &__ic-bookmark,
-   &__ic-notification {
-      cursor: pointer;
-      border-width: 2px;
-      border-style: solid;
-      margin-bottom: 0.45rem;
-      width: 36px;
-      height: 36px;
-      position: absolute;
-      right: 0;
-      color: $white;
-      transition: all 0.3s ease;
-      z-index: 20;
+  &__ic-whatshot,
+  &__ic-bookmark,
+  &__ic-notification {
+    cursor: pointer;
+    border-width: 2px;
+    border-style: solid;
+    margin-bottom: 0.45rem;
+    width: 36px;
+    height: 36px;
+    position: absolute;
+    right: 0;
+    color: $white;
+    transition: all 0.3s ease;
+    z-index: 20;
+  }
+
+  &__ic-whatshot {
+    top: 0;
+    background: $blue;
+    border-color: $blue;
+  }
+
+  &__ic-bookmark {
+    top: 46px;
+    background: $green;
+    border-color: $green;
+  }
+
+  &__ic-notification {
+   top: 92px;
+   background: $orange;
+   border-color: $orange;
+  }
+
+  &__icons {
+    width: 100%;
+    max-width: 15px;
+    height: auto;
+  }
+
+  &__content {
+    padding: 1.5rem;
+    position: absolute;
+    top: 0;
+    right: -322px;
+    background: $white;
+    width: 100%;
+    max-width: 270px;
+    height: 520px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+
+  &__content-heading {
+    font-weight: 500;
+    font-size: $baseFontSize * 1.5;
+    margin-top: 0;
+  }
+
+  &__content-list {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  &__content-list-item {
+    font-weight: 500;
+    padding: 0.8rem 0;
+    font-size: $baseFontSize * 1.07;
+    position: relative;
+
+    &-head {
+      max-width: 230px;
+      margin-right: 0.5rem;
     }
+  }
 
-   &__ic-whatshot {
-      top: 0;	
-      background: $blue;
-      border-color: $blue;
+  &__content-list-item-title {
+    padding: 0.3rem 0.5rem;
+    position: relative;
+    border: 1px solid $red;
+    margin: 1.3rem 0;
+  }
+
+  &__gradient-bg {
+    background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,1));
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  &--whatshot {
+    color: $blue;
+    border: 2px solid $blue;
+  }
+
+  &--bookmark {
+    color: $green;
+    border: 2px solid $green;
+  }
+
+  &--notification {
+    color: $orange;
+    border: 2px solid $orange;
+  }
+
+  &--icons {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &--icons-list-item {
+    color: darken($lightGray, 15%);
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 13px;
+    transition: all 0.5s ease;
+
+    &:hover {
+      color: $gray;
     }
+  }
 
-   &__ic-bookmark {
-      top: 46px;
-      background: $green;
-      border-color: $green;
-    }   
+  &--icons-list-item-close {
+    position: absolute;
+    left: 0;
+    top: 13px;
+    margin-right: 0.5rem;
+    color: darken($lightGray, 15%);
+    transition: all 0.5s ease;
 
-   &__ic-notification {
-     top: 92px;
-     background: $orange;
-     border-color: $orange;
-   }
-
-    &__icons {
-      width: 100%;
-      max-width: 15px;
-      height: auto;
+    &:hover {
+      color: $gray;
     }
+  }
 
-    &__content {
-      padding: 1.5rem;  
-      position: absolute;
-      top: 0;
-      right: -322px;
-      background: $white;
-      width: 100%;
-      max-width: 270px;
-      height: 520px;
-      overflow: hidden;
-      transition: all 0.3s ease;
-    }
+  &--title {
+    margin-left: 35px;
+    display: inline-block;
+  }
 
-    &__content-heading {
-      font-weight: 500;
-      font-size: $baseFontSize * 1.5;
-      margin-top: 0;
-    }
+  &--title-action,
+  &--title-action-close {
+    color: $red;
+    font-size: $smFontSize;
+  }
 
-    &__content-list {
-      list-style-type: none;
-      padding: 0;
-    }
+  &--title-action-close {
+    position: absolute;
+    top: 55%;
+    right: 8px;
+    transform: translateY(-55%);
+  }
 
-    &__content-list-item {
-     font-weight: 500;
-     padding: 0.8rem 0;  	
-     font-size: $baseFontSize * 1.07;
-     position: relative;
-
-       &-head {
-         max-width: 230px;
-         margin-right: 0.5rem;
-       }
-    }
-
-    &__content-list-item-title {
-      padding: 0.3rem 0.5rem;  
-      position: relative;
-      border: 1px solid $red;
-      margin: 1.3rem 0;	
-    }
-
-    &__gradient-bg {
-      background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,1));
-      height: 100px;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-    }
-
-    &--whatshot {
-      color: $blue;
-      border: 2px solid $blue;
-    }
-
-    &--bookmark {
-      color: $green;
-      border: 2px solid $green;
-    }
-
-    &--notification {
-      color: $orange;
-      border: 2px solid $orange;
-    }
-
-    &--icons {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
-
-    &--icons-list-item {
-     color: darken($lightGray, 15%);  
-     position: absolute;
-     right: 0;
-     top: 0; 
-     margin-top: 13px; 
-     transition: all 0.5s ease;	
-
-       &:hover {
-         color: $gray;
-       }
-    }
-
-    &--icons-list-item-close {
-     position: absolute;
-     left: 0;
-     top: 13px; 
-     margin-right: 0.5rem;
-     color: darken($lightGray, 15%);  
-     transition: all 0.5s ease;
-
-       &:hover {
-         color: $gray;
-       }
-    }
-
-    &--title {
-     margin-left: 35px;    	
-     display: inline-block;
-    }
-
-    &--title-action,
-    &--title-action-close {
-      color: $red;
-      font-size: $smFontSize;     	
-    }
-
-    &--title-action-close {
-      position: absolute;
-      top: 55%;
-      right: 8px;
-      transform: translateY(-55%);
-    }
-
-    &__btn-close {
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 25px;
-      height: 25px;
-      text-align: center; 
-      color: $white;
-      line-height: 25px;
-    }
+  &__btn-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    color: $white;
+    line-height: 25px;
+  }
 }
 
 .icon-small { 
