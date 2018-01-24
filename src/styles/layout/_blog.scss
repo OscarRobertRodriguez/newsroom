@@ -35,6 +35,7 @@
       pointer-events: none;
     }
     &[data-layer="3"] {
+      width: 90%;
       margin-bottom: 40px;
       position: relative;
       border-left: 1px solid $red;
