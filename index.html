@@ -14,6 +14,9 @@
 
 <body>
   <div class="page-wrapper">
+    <div class="scrollspy-track">
+      <div class="scrollspy-bar"></div>
+    </div>
     <header class='site-header'>
       <div class="section-wrapper">
         <!-- settings modal -->
@@ -220,7 +223,187 @@
       </div>
     </header>
 
+    <!-- slideout menu start -->
+    <section class="slideout-menu"> 
+      <!-- slideout menu - most popular today -->
+      <input type="radio" name="slideout-menu-icons" id="slideout-menu-icon-whatshot">
+      <label for="slideout-menu-icon-whatshot" class="slideout-menu__ic-whatshot">
+        <span class="material-icons slideout-menu--icons" title="Most Popular Today">whatshot</span>
+      </label>
+      
+      <!-- slideout menu - most popular today content -->
+      <div class="slideout-menu__content slideout-menu--whatshot">
+        <div class="slideout-menu__btn-close btn-close--whatshot">
+          <a href="#"><span class="material-icons icon-small" title="Close Window">close</span></a>
+        </div>
+        <h1 class="slideout-menu__content-heading">Most Popular Today</h1>
+        <ul class="slideout-menu__content-list">
+          <li class="slideout-menu__content-list-item">
+            <div class="slideout-menu__content-list-item-head">A huge collection of SVGs, now powered by React.js
+               <a href="#" class="slideout-menu--icons-list-item"><span class="material-icons" title="Launch">open_in_new</span></a>
+            </div>
+          </li>
+          <li class="slideout-menu__content-list-item">
+            <div class="slideout-menu__content-list-item-head">Artificial intelligence and internet music culture
+               <a href="#" class="slideout-menu--icons-list-item"><span class="material-icons" title="Launch">open_in_new</span></a>
+           </div>
+          </li>
+          <li class="slideout-menu__content-list-item">
+            <div class="slideout-menu__content-list-item-head">Google.ai aims to make state of the art AI advances accessible to everyone
+              <a href="#" class="slideout-menu--icons-list-item"><span class="material-icons" title="Launch">open_in_new</span></a>
+            </div>
+          </li>
+          <li class="slideout-menu__content-list-item">
+            <div class="slideout-menu__content-list-item-head">Deep Algo offers simple code visualization for non-coders
+                <a href="#" class="slideout-menu--icons-list-item"><span class="material-icons" title="Launch">open_in_new</span></a>
+            </div>
+          </li>
+          <li class="slideout-menu__content-list-item">
+            <div class="slideout-menu__content-list-item-head">A huge collection of SVGs, now powered by React.js
+               <a href="#" class="slideout-menu--icons-list-item"><span class="material-icons" title="Launch">open_in_new</span></a>
+            </div>
+          </li>
+          <li class="slideout-menu__content-list-item">
+            <div class="slideout-menu__content-list-item-head">Google.ai aims to make state of the art AI advances accessible to everyone
+              <a href="#" class="slideout-menu--icons-list-item"><span class="material-icons" title="Launch">open_in_new</span></a>
+            </div>
+          </li>
+          <li class="slideout-menu__content-list-item">
+            <div class="slideout-menu__content-list-item-head">Artificial intelligence and internet music culture
+               <a href="#" class="slideout-menu--icons-list-item"><span class="material-icons" title="Launch">open_in_new</span></a>
+           </div>
+          </li>
+        </ul>
+        <div class="slideout-menu__gradient-bg"></div>
+      </div>
+
+      <!-- slideout menu - read soon --> 
+      <input type="radio" name="slideout-menu-icons" id="slideout-menu-icon-bookmark">
+      <label for="slideout-menu-icon-bookmark" class="slideout-menu__ic-bookmark">
+        <span class="material-icons slideout-menu--icons" title="Read Soon">bookmark_border</span>
+      </label>
+
+      <!-- slideout menu - read soon content -->
+      <div class="slideout-menu__content slideout-menu--bookmark">
+        <div class="slideout-menu__btn-close btn-close--bookmark">
+          <a href="#"><span class="material-icons icon-small" title="Close Window">close</span></a>
+        </div>
+        <h1 class="slideout-menu__content-heading">Read Soon</h1>
+        <ul class="slideout-menu__content-list">
+           <li class="slideout-menu__content-list-item-title">
+            <div class="slideout-menu--title-action">Expiring Today at 4:00pm</div>
+            <a href="#" class="slideout-menu--title-action-close "><span class="material-icons icon-small" title="Remove">close</span></a>
+          </li>
+          <li class="slideout-menu__content-list-item">
+            <div class="slideout-menu__content-list-item-head">
+              <a href="#" class="slideout-menu--icons-list-item-close"><span class="material-icons icon-small" title="Remove">close</span></a>
+               <div class="slideout-menu--title">A huge collection of SVGs, now powered by React.js</div>
+               <a href="#" class="slideout-menu--icons-list-item"><span class="material-icons" title="Launch">open_in_new</span></a>
+            </div>
+          </li>
+          <li class="slideout-menu__content-list-item">
+            <div class="slideout-menu__content-list-item-head">
+              <a href="#" class="slideout-menu--icons-list-item-close"><span class="material-icons icon-small" title="Remove">close</span></a>
+               <div class="slideout-menu--title">Artificial intelligence and internet music culture</div>
+               <a href="#" class="slideout-menu--icons-list-item"><span class="material-icons" title="Launch">open_in_new</span></a>
+           </div>
+          </li>
+          <li class="slideout-menu__content-list-item-title">
+            <div class="slideout-menu--title-action">Expiring Tomorrow</div>
+           <a href="#" class="slideout-menu--title-action-close "><span class="material-icons icon-small" title="Remove">close</span></a>
+          </li>
+          <li class="slideout-menu__content-list-item">
+            <div class="slideout-menu__content-list-item-head">
+              <a href="#" class="slideout-menu--icons-list-item-close"><span class="material-icons icon-small" title="Remove">close</span></a>
+               <div class="slideout-menu--title">Google.ai aims to make state of the art AI advances accessible to everyone</div>
+               <a href="#" class="slideout-menu--icons-list-item"><span class="material-icons" title="Launch">open_in_new</span></a>
+            </div>
+          </li>
+          <li class="slideout-menu__content-list-item">
+            <div class="slideout-menu__content-list-item-head">
+              <a href="#" class="slideout-menu--icons-list-item-close"><span class="material-icons icon-small" title="Remove">close</span></a>
+               <div class="slideout-menu--title">Deep Algo offers simple code visualization for non-coders</div>
+               <a href="#" class="slideout-menu--icons-list-item"><span class="material-icons" title="Launch">open_in_new</span></a>
+            </div>
+          </li>
+          <li class="slideout-menu__content-list-item">
+            <div class="slideout-menu__content-list-item-head">
+              <a href="#" class="slideout-menu--icons-list-item-close"><span class="material-icons icon-small" title="Remove">close</span></a>
+               <div class="slideout-menu--title">A huge collection of SVGs, now powered by React.js</div>
+               <a href="#" class="slideout-menu--icons-list-item"><span class="material-icons" title="Launch">open_in_new</span></a>
+            </div>
+          </li>
+        </ul>
+        <div class="slideout-menu__gradient-bg"></div>
+      </div>
+
+      <!-- slideout menu - notifications --> 
+      <input type="radio" name="slideout-menu-icons" id="slideout-menu-icon-notification">
+      <label for="slideout-menu-icon-notification" class="slideout-menu__ic-notification">
+        <span class="material-icons slideout-menu--icons" title="Notifications">notifications</span>
+      </label>
+
+      <!-- slideout menu - notifications content --> 
+      <div class="slideout-menu__content slideout-menu--notification">
+        <div class="slideout-menu__btn-close btn-close--notification">
+          <a href="#"><span class="material-icons icon-small" title="Close Window">close</span></a>
+        </div>
+        <h1 class="slideout-menu__content-heading">Notifications</h1>
+        <ul class="slideout-menu__content-list">
+          <li class="slideout-menu__content-list-item-title">
+            <div class="slideout-menu--title-action">Comments</div>
+           <a href="#" class="slideout-menu--title-action-close "><span class="material-icons icon-small" title="Remove">close</span></a>
+          </li>
+          <li class="slideout-menu__content-list-item">
+            <div class="slideout-menu__content-list-item-head">
+               <a href="#" class="slideout-menu--icons-list-item-close"><span class="material-icons icon-small" title="Remove">close</span></a>
+               <div class="slideout-menu--title">A huge collection of SVGs, now powered by React.js</div>
+               <a href="#" class="slideout-menu--icons-list-item"><span class="material-icons" title="Launch">open_in_new</span></a>
+            </div>
+          </li>
+          <li class="slideout-menu__content-list-item">
+            <div class="slideout-menu__content-list-item-head">
+              <a href="#" class="slideout-menu--icons-list-item-close"><span class="material-icons icon-small" title="Remove">close</span></a>
+               <div class="slideout-menu--title">Artificial intelligence and internet music culture</div>
+               <a href="#" class="slideout-menu--icons-list-item"><span class="material-icons" title="Launch">open_in_new</span></a>
+           </div>
+          </li>
+           <li class="slideout-menu__content-list-item-title">
+            <div class="slideout-menu--title-action">Must Reads</div>
+           <a href="#" class="slideout-menu--title-action-close "><span class="material-icons icon-small" title="Remove">close</span></a>
+          </li>
+          <li class="slideout-menu__content-list-item">
+            <div class="slideout-menu__content-list-item-head">
+              <a href="#" class="slideout-menu--icons-list-item-close"><span class="material-icons icon-small" title="Remove">close</span></a>
+               <div class="slideout-menu--title">Google.ai aims to make state of the art AI advances accessible to everyone</div>
+               <a href="#" class="slideout-menu--icons-list-item"><span class="material-icons" title="Launch">open_in_new</span></a>
+            </div>
+          </li>
+          <li class="slideout-menu__content-list-item">
+            <div class="slideout-menu__content-list-item-head">
+              <a href="#" class="slideout-menu--icons-list-item-close"><span class="material-icons icon-small" title="Remove">close</span></a>
+               <div class="slideout-menu--title">Deep Algo offers simple code visualization for non-coders</div>
+               <a href="#" class="slideout-menu--icons-list-item"><span class="material-icons" title="Launch">open_in_new</span></a>
+            </div>
+          </li>
+          <li class="slideout-menu__content-list-item">
+            <div class="slideout-menu__content-list-item-head">
+              <a href="#" class="slideout-menu--icons-list-item-close"><span class="material-icons icon-small" title="Remove">close</span></a>
+               <div class="slideout-menu--title">A huge collection of SVGs, now powered by React.js</div>
+               <a href="#" class="slideout-menu--icons-list-item"><span class="material-icons" title="Launch">open_in_new</span></a>
+            </div>
+          </li>
+        </ul>
+        <div class="slideout-menu__gradient-bg"></div>
+      </div>
+    </section>
+    <!-- slideout menu end -->
+
     <section class='top-news'>
+      <button id='submit-article' class="button button--main">
+        <span class="button__icon material-icons">airplanemode_active</span>
+        Submit an Article
+      </button>
       <div class="border-corner--triple"></div>
       <h1 class='top-news__title'>top news</h1>
       <section class='top-news__article-wrapper'>
@@ -430,11 +613,11 @@
               <ul class="media-object__ratings">
                 <li>
                   <span class="material-icons">visibility</span>
-                  <span class="number">275</span>
+                  <span class="media-object__number">275</span>
                 </li>
                 <li>
                   <span class="material-icons">chat_bubble_outline</span>
-                  <span class="number">114</span>
+                  <span class="media-object__number">114</span>
                 </li>
                 <li>
                   <span class="material-icons">3d_rotation</span>
@@ -472,11 +655,11 @@
               <ul class="media-object__ratings">
                 <li>
                   <span class="material-icons">visibility</span>
-                  <span class="number">275</span>
+                  <span class="media-object__number">275</span>
                 </li>
                 <li>
                   <span class="material-icons">chat_bubble_outline</span>
-                  <span class="number">114</span>
+                  <span class="media-object__number">114</span>
                 </li>
                 <li>
                   <span class="material-icons">3d_rotation</span>
@@ -519,11 +702,11 @@
                 </div>
                 <div class="media-small-bottom-item">
                   <span class="eye material-icons" aria-hidden="true">visibility</span>
-                  <span class="number">275</span>
+                  <span class="media-object__number">275</span>
                 </div>
                 <div class="media-small-bottom-item">
                   <span class="chat-bubble material-icons">chat_bubble_outline</span>
-                  <span class="number">114</span>
+                  <span class="media-object__number">114</span>
                 </div>
                 <div class="media-small-bottom-item">
                   <span class="three-d material-icons">3d_rotation</span>
@@ -565,11 +748,11 @@
                 </div>
                 <div class="media-small-bottom-item">
                   <span class="eye material-icons" aria-hidden="true">visibility</span>
-                  <span class="number">275</span>
+                  <span class="media-object__number">275</span>
                 </div>
                 <div class="media-small-bottom-item">
                   <span class="chat-bubble material-icons">chat_bubble_outline</span>
-                  <span class="number">114</span>
+                  <span class="media-object__number">114</span>
                 </div>
                 <div class="media-small-bottom-item">
                   <span class="three-d material-icons">3d_rotation</span>
@@ -626,15 +809,15 @@
               <ul class="media-object__ratings">
                 <li>
                   <span class="material-icons">visibility</span>
-                  <span class="number">275</span>
+                  <span class="media-object__number">275</span>
                 </li>
                 <li>
                   <span class="material-icons">chat_bubble_outline</span>
-                  <span class="number">114</span>
+                  <span class="media-object__number">114</span>
                 </li>
                 <li>
-                  <span class="material-icons">3d_rotation</span>
-                  <span class="more">more</span>
+                  <span class="material-icons md-36">3d_rotation</span>
+                  <span>more</span>
                 </li>
               </ul>
             </div>
@@ -668,11 +851,11 @@
               <ul class="media-object__ratings">
                 <li>
                   <span class="material-icons">visibility</span>
-                  <span class="number">275</span>
+                  <span class="media-object__number">275</span>
                 </li>
                 <li>
                   <span class="material-icons">chat_bubble_outline</span>
-                  <span class="number">114</span>
+                  <span class="media-object__number">114</span>
                 </li>
                 <li>
                   <span class="material-icons">3d_rotation</span>
@@ -715,11 +898,11 @@
                 </div>
                 <div class="media-small-bottom-item">
                   <span class="eye material-icons" aria-hidden="true">visibility</span>
-                  <span class="number">275</span>
+                  <span class="media-object__number">275</span>
                 </div>
                 <div class="media-small-bottom-item">
                   <span class="chat-bubble material-icons">chat_bubble_outline</span>
-                  <span class="number">114</span>
+                  <span class="media-object__number">114</span>
                 </div>
                 <div class="media-small-bottom-item">
                   <span class="three-d material-icons">3d_rotation</span>
@@ -761,11 +944,11 @@
                 </div>
                 <div class="media-small-bottom-item">
                   <span class="eye material-icons" aria-hidden="true">visibility</span>
-                  <span class="number">275</span>
+                  <span class="media-object__number">275</span>
                 </div>
                 <div class="media-small-bottom-item">
                   <span class="chat-bubble material-icons">chat_bubble_outline</span>
-                  <span class="number">114</span>
+                  <span class="media-object__number">114</span>
                 </div>
                 <div class="media-small-bottom-item">
                   <span class="three-d material-icons">3d_rotation</span>
@@ -978,11 +1161,11 @@
               <ul class="media-object__ratings">
                 <li>
                   <span class="material-icons">visibility</span>
-                  <span class="number">275</span>
+                  <span class="media-object__number">275</span>
                 </li>
                 <li>
                   <span class="material-icons">chat_bubble_outline</span>
-                  <span class="number">114</span>
+                  <span class="media-object__number">114</span>
                 </li>
                 <li>
                   <span class="material-icons">3d_rotation</span>
@@ -1025,11 +1208,11 @@
                 </div>
                 <div class="media-small-bottom-item">
                   <span class="eye material-icons" aria-hidden="true">visibility</span>
-                  <span class="number">275</span>
+                  <span class="media-object__number">275</span>
                 </div>
                 <div class="media-small-bottom-item">
                   <span class="chat-bubble material-icons">chat_bubble_outline</span>
-                  <span class="number">114</span>
+                  <span class="media-object__number">114</span>
                 </div>
                 <div class="media-small-bottom-item">
                   <span class="three-d material-icons">3d_rotation</span>
@@ -1087,11 +1270,11 @@
               <ul class="media-object__ratings">
                 <li>
                   <span class="material-icons">visibility</span>
-                  <span class="number">275</span>
+                  <span class="media-object__number">275</span>
                 </li>
                 <li>
                   <span class="material-icons">chat_bubble_outline</span>
-                  <span class="number">114</span>
+                  <span class="media-object__number">114</span>
                 </li>
                 <li>
                   <span class="material-icons">3d_rotation</span>
@@ -1134,11 +1317,11 @@
                 </div>
                 <div class="media-small-bottom-item">
                   <span class="eye material-icons" aria-hidden="true">visibility</span>
-                  <span class="number">275</span>
+                  <span class="media-object__number">275</span>
                 </div>
                 <div class="media-small-bottom-item">
                   <span class="chat-bubble material-icons">chat_bubble_outline</span>
-                  <span class="number">114</span>
+                  <span class="media-object__number">114</span>
                 </div>
                 <div class="media-small-bottom-item">
                   <span class="three-d material-icons">3d_rotation</span>
@@ -1250,7 +1433,7 @@
                   <div class="subscribe-form__input-inner subscribe-form-anim-bgchange">
                     <input name="firstName" placeholder="First Name" class="subscribe-form__input" minlength="2" maxlength="20" required="" type="text">
                     <button type="button" class="subscribe-form__btn--next">
-                      <i class="fas fa-arrow-right"></i>
+                      <span class="fas fa-arrow-right"></span>
                     </button>
                   </div>
                 </div>
@@ -1259,7 +1442,7 @@
                   <div class="subscribe-form__input-inner">
                     <input name="lastName" placeholder="Last Name" class="subscribe-form__input" minlength="2" maxlength="20" required="" type="text">
                     <button type="button" class="subscribe-form__btn--next">
-                      <i class="fas fa-arrow-right"></i>
+                      <span class="fas fa-arrow-right"></span>
                     </button>
                   </div>
                 </div>
@@ -1269,7 +1452,7 @@
                   <div class="subscribe-form__input-inner">
                     <input name="subscriberEmail" placeholder="Email" class="subscribe-form__input" required="" type="email">
                     <button type="button" class="subscribe-form__btn--next">
-                      <i class="fas fa-arrow-right"></i>
+                      <span class="fas fa-arrow-right"></span>
                     </button>
                   </div>
                 </div>
@@ -1278,7 +1461,7 @@
                 <div class="subscribe-form__input-wrap subscribe-form__submit subscribe-anim-fadeout-back left-zero">
                   <div class="subscribe-form__input-inner">
                     <button type="button" class="subscribe-form__btn--back">
-                      <i class="fas fa-arrow-right">arrow_back</i>
+                      <span class="fas fa-arrow-right">arrow_back</span>
                     </button>
                     <input name="submit-mailchimp" value="Subscribe" class="subscribe-form__submit-btn" data-ga-category="Subscribe" data-ga-action="subscribe"
                       data-ga-label="Subscribe for Updates" type="submit">
