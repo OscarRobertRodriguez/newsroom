@@ -29,7 +29,7 @@ slideoutCloseBtns.forEach((closeBtn) => {
 
 // Function to slide icons to the left
 function slideIconsToLeft(ele, icon1, icon1Bg, icon2, icon2Bg){
-  ele.nextElementSibling.style.cssText = `background: white; border-right: 1px solid white; right: 320px; width: 47px;`
+  ele.nextElementSibling.style.cssText = `background: white; border-right: 0px solid white; right: 320px; width: 47px;`;
   ele.nextElementSibling.nextElementSibling.removeAttribute(`style`);
   icon1.nextElementSibling.style.cssText = `background: ${icon1Bg}; color: white; right: 329px; width: 36px;`
   icon2.nextElementSibling.style.cssText = `background: ${icon2Bg}; color: white; right: 329px; width: 36px;`
