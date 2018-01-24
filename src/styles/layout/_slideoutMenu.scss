@@ -10,88 +10,72 @@
    &__ic-whatshot,
    &__ic-bookmark,
    &__ic-notification {
-     cursor: pointer;
-     border-width: 2px;
-     border-style: solid;
-     margin: 0.45rem 0;
-     width: 36px;
-     height: 36px;
-     position: absolute;
-     right: 0;
-     color: $white;
-     transition: all 0.3s ease;
-     z-index: 20;
-
-       // &:hover {
-       //   background: $white;	
-       // }
+      cursor: pointer;
+      border-width: 2px;
+      border-style: solid;
+      margin: 0.45rem 0;
+      width: 36px;
+      height: 36px;
+      position: absolute;
+      right: 0;
+      color: $white;
+      transition: all 0.3s ease;
+      z-index: 20;
     }
 
    &__ic-whatshot {
-     top: 500px;	
-     background: $blue;
-     border-color: $blue;
-
-       // &:hover {
-       // 	color: $blue;
-       // }
+      top: 500px;	
+      background: $blue;
+      border-color: $blue;
     }
 
    &__ic-bookmark {
-     top: 546px;
-     background: $green;
-     border-color: $green;
-
-       // &:hover {
-       // 	color: $green;
-       // }
+      top: 546px;
+      background: $green;
+      border-color: $green;
     }   
 
    &__ic-notification {
      top: 592px;
      background: $orange;
      border-color: $orange;
-
-       // &:hover {
-       //   color: $orange;
-       // }
    }
 
 
     &__icons {
-     width: 100%;
-     max-width: 15px;
-     height: auto;
+      width: 100%;
+      max-width: 15px;
+      height: auto;
     }
 
     &__content {
-     padding: 1.5rem;  
-     position: absolute;
-     top: 507px;
-     right: -322px;
-     background: $white;
-     width: 100%;
-     max-width: 270px;
-     height: 520px;
-     overflow: hidden;
-     transition: all 0.3s ease;
+      padding: 1.5rem;  
+      position: absolute;
+      top: 507px;
+      right: -322px;
+      background: $white;
+      width: 100%;
+      max-width: 270px;
+      height: 520px;
+      overflow: hidden;
+      transition: all 0.3s ease;
     }
 
     &__content-heading {
-     font-weight: 500;
-     font-size: $baseFontSize*1.5;
-     margin-top: 0;
+      font-weight: 500;
+      font-size: $baseFontSize * 1.5;
+      margin-top: 0;
     }
 
     &__content-list {
-     list-style-type: none;
-     padding: 0;
+      list-style-type: none;
+      padding: 0;
     }
 
     &__content-list-item {
      font-weight: 500;
      padding: 0.8rem 0;  	
-     font-size: $baseFontSize*1.07;
+     font-size: $baseFontSize * 1.07;
      position: relative;
 
        &-head {
@@ -117,25 +101,25 @@
     }
 
     &--whatshot {
-     color: $blue;
-     border: 2px solid $blue;
+      color: $blue;
+      border: 2px solid $blue;
     }
 
     &--bookmark {
-     color: $green;
-     border: 2px solid $green;
+      color: $green;
+      border: 2px solid $green;
     }
 
     &--notification {
-     color: $orange;
-     border: 2px solid $orange;
+      color: $orange;
+      border: 2px solid $orange;
     }
 
     &--icons {
-     position: absolute;
-     top: 50%;
-     left: 50%;
-     transform: translate(-50%, -50%);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
     }
 
     &--icons-list-item {
@@ -147,7 +131,7 @@
      transition: all 0.5s ease;	
 
        &:hover {
-       	color: $gray;
+         color: $gray;
        }
     }
 
@@ -199,15 +183,15 @@
 }
 
 .btn-close--whatshot {
-    background: $blue;
+   background: $blue;
  }
 
  .btn-close--bookmark {
-    background: $green;
+   background: $green;
  }
 
  .btn-close--notification {
-    background: $orange;
+   background: $orange;
  }
 
 #slideout-menu-icon-whatshot,
