@@ -12,7 +12,6 @@ body {
   // margin: 0; 
   // padding: 0;
   // flex-direction: column;
-
 }
 
 .page-wrapper {
@@ -49,7 +48,7 @@ body {
 .twitter-news {
   display: grid;
   grid-template-columns: 1fr 1fr;
-    &>h1, &>h2{
+    & > h1, & > h2{
       grid-template-columns: 1fr;
       grid-column: 1 / -1;
       margin-bottom: 30px;
@@ -61,4 +60,3 @@ body {
     margin: 0 0 -10px;
   }
 }
-

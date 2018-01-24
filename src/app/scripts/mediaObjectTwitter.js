@@ -6,7 +6,6 @@ const twitterLogo = document.querySelector('.twitterLogo');
 const twitterFollowBtns = Array.from(document.querySelectorAll('.twitterFollowBtn'));
 
 const twitterObjects = Array.from(document.querySelectorAll('.media-object-twitter'));
-console.log(twitterObjects);
 
 twitterObjects.forEach((obj) => {
   const userImg = obj.querySelector('.user-img');
