@@ -8,6 +8,7 @@ import '../assets/images/dev_news@3x.png';
 import '../assets/images/dev_video_1.jpeg';
 import '../assets/images/dev_video_2.jpg';
 import '../assets/images/dev_video_3.png';
+import slideoutMenu from './scripts/slideoutMenu'
 
 // JS components
 // import './scripts/examples/examples';

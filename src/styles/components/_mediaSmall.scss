@@ -50,7 +50,6 @@
 }
 
 .media-small-img-container {
-  border: 1px solid black;
   height: 250px;
   width: 350px;
   background: url('../assets/images/robot.jpg');
@@ -97,7 +96,7 @@
   font-size: 70%;
 }
 
-.number {
+.media-object__number {
   color: $red;
   font-weight: 600;
   padding-top: 3px;
