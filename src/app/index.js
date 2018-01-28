@@ -2,7 +2,7 @@
 import 'normalize.scss/normalize.scss';
 import '../styles/main.scss';
 
-
+// import html for html-loader
 import '../index.html';
 
 
