@@ -7,19 +7,47 @@ const config = {
   entry: './src/app/index.js',
   output: {
     filename: 'bundle.js',
-    path: commonPaths.outputPath
+    path: commonPaths.outputPath,
+    publicPath: ''
   },
   module: {
     rules: [
       {
         test: /.*\.(svg|gif|png|jpe?g)$/i,
-        use: [{
+        use: [
+          {
           loader: 'url-loader',
           options: {
-            limit: 5000,
+            limit: 10000,
             name: 'assets/images/[name].[ext]'
-          }
-        }]
+          },
+          
+        },
+          {
+            loader: 'image-webpack-loader',
+            options: {
+              mozjpeg: {
+                progressive: true,
+                quality: 65
+              },
+              // optipng.enabled: false will disable optipng
+              optipng: {
+                enabled: false,
+              },
+              pngquant: {
+                quality: '65-90',
+                speed: 4
+              },
+              gifsicle: {
+                interlaced: false,
+              },
+              // the webp option will enable WEBP
+              webp: {
+                quality: 75
+              }
+            }
+          },
+      ]
       },
       {
         test: /\.(woff|woff2|eot|ttf)/,
@@ -30,6 +58,10 @@ const config = {
             name: 'assets/fonts/[name].[ext]'
           }
         }]
+      },
+      {
+      test: /\.html$/,
+      use: ['html-loader?attrs=img:src video:poster'] 
       }
     ]
   },

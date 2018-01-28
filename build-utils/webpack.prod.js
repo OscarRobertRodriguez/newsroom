@@ -7,30 +7,24 @@ const webpack = require('webpack');
 const config = {
   devtool: 'eval-source-map',
   module: {
-    rules: [{
-      test: /\.css/,
-      use: [
-        'style-loader',
-        'css-loader'
-      ]
-    },
-    {
-      test: /\.scss/,
-      use: ExtractTextWebpackPlugin.extract({
-        fallback: 'style-loader',
-        use: [
-          'css-loader',
-          {
-            //postcss-loader to add prefixed styles for browser support
-            loader: 'postcss-loader',
-            options: {
-              plugins: () => [require('autoprefixer')]
-            }
-          },
-          'sass-loader'
-        ]
-      })
-    }
+    rules: [
+      {
+        test: /\.scss/,
+        use: ExtractTextWebpackPlugin.extract({
+          fallback: 'style-loader',
+          use: [
+            'css-loader',
+            {
+              //postcss-loader to add prefixed styles for browser support
+              loader: 'postcss-loader',
+              options: {
+                plugins: () => [require('autoprefixer')]
+              }
+            },
+            'sass-loader'
+          ]
+        })
+      }
     ]
   },
   plugins: [

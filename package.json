@@ -4,10 +4,12 @@
   "description": "bov academy project that will for developers by developers",
   "main": "index.js",
   "scripts": {
-    "build": "webpack",
-    "dev": "webpack --progress && webpack-dev-server -d --hot  --watch",
-    "production": "NODE_ENV=production webpack",
-    "deploy": "gh-pages -d dist"
+    "dev": "npm run webpack-dev-server -- --env.env=dev",
+    "build:watch": "npm run build -- --watch",
+    "webpack": "node ./node_modules/webpack/bin/webpack.js",
+    "webpack-dev-server": "webpack-dev-server --hot",
+    "build": "npm run webpack -- --env.env=prod",
+    "deploy": "npm run build && gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -25,12 +27,15 @@
     "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.1",
     "clean-webpack-plugin": "^0.1.17",
+    "compression-webpack-plugin": "^1.1.3",
     "css-hot-loader": "^1.3.5",
     "css-loader": "^0.28.9",
     "extract-text-webpack-plugin": "^3.0.2",
     "file-loader": "^1.1.6",
     "gh-pages": "^1.1.0",
+    "html-loader": "^0.5.5",
     "html-webpack-plugin": "^2.30.1",
+    "image-webpack-loader": "^4.0.0",
     "node-sass": "^4.7.2",
     "optimize-css-assets-webpack-plugin": "^3.2.0",
     "postcss-loader": "^2.0.10",
@@ -40,7 +45,8 @@
     "uglifyjs-webpack-plugin": "^1.1.6",
     "url-loader": "^0.6.2",
     "webpack": "^3.10.0",
-    "webpack-dev-server": "^2.11.1"
+    "webpack-dev-server": "^2.11.1",
+    "webpack-merge": "^4.1.1"
   },
   "dependencies": {
     "material-design-icons": "^3.0.1",
