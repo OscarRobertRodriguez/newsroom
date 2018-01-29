@@ -60,6 +60,10 @@ const config = {
         }]
       },
       {
+        test: /\.hbs$/, 
+        loader: "handlebars-loader"
+      },
+      {
       test: /\.html$/,
       use: ['html-loader?attrs=img:src video:poster'] 
       }
