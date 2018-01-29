@@ -1,5 +1,4 @@
 // import main scss file and reset 
-import 'normalize.scss/normalize.scss';
 import '../styles/main.scss';
 
 // import html for html-loader
