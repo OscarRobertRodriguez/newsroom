@@ -37,7 +37,7 @@ const config = {
   devServer: {
     inline: true,
     hot: true,
-    open: true
+    open: true,
   }
 };
 
