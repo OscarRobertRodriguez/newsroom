@@ -31,6 +31,7 @@
       }
     }
     .category-content {
+      display: none;
       opacity: 0;
       pointer-events: none;
     }
@@ -68,7 +69,6 @@
         top: 0;
         margin-top: 50px;
         margin-bottom: 50px;
-        float: right;
         text-align: right;
         display: inline-block;
         color: #999;
@@ -110,8 +110,7 @@
     &[data-layer="2"] {
       z-index: 3000;
     }
-  }
-  // transitions
+  } // transitions
   .category {
     transition: top .4s .1s ease-in-out, left .4s .1s ease-in-out;
     .category-title {
@@ -132,4 +131,3 @@
     padding-left: 3em;
   }
 }
-
